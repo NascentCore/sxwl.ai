@@ -31,13 +31,21 @@ export default function Home() {
               集群
             </div>
             <div className="nai_home_cove_text">
-              <Link href="https://wenjuan.feishu.cn/m?t=sT0CPNNzNhLi-qegt">
-                诚邀深度学习领域专家加入我们
+              诚邀深度学习领域专家
+              <Link
+                href="https://wenjuan.feishu.cn/m?t=sT0CPNNzNhLi-qegt"
+                style={{ color: "#3370ff", textDecoration: "underline" }}
+              >
+                加入我们
               </Link>
             </div>
-            <div className="nai_home_cove_text" style={{ marginBottom: 0 }}>
-              <Link href="https://wenjuan.feishu.cn/m?t=sJHPnI4jPhLi-g0wr">
-                敬请关注
+            <div className="nai_home_cove_text">
+              敬请
+              <Link
+                href="https://wenjuan.feishu.cn/m?t=sJHPnI4jPhLi-g0wr"
+                style={{ color: "#3370ff", textDecoration: "underline" }}
+              >
+                关注
               </Link>
             </div>
           </div>
