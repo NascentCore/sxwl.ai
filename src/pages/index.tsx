@@ -24,7 +24,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            background: "#fff",
+            background: "linear-gradient(to bottom,transparent,rgb(255,255,255))rgb(0,0,0)",
           }}
         >
           <Cover />
