@@ -3,7 +3,11 @@ import React, { useEffect, useState, useContext } from "react";
 import { Card, Avatar, Typography, Box } from "@mui/material";
 
 const Index = () => {
-  const h1Styles = { fontSize: "45px", marginBottom: "30px" };
+  const h1Styles = {
+    fontSize: "45px",
+    marginBottom: "30px",
+    fontWeight: "bold",
+  };
   const textStyles = { fontSize: "36px", marginBottom: "30px" };
   const linkStyples = { textDecoration: "underline", color: "#3370ff" };
   return (
