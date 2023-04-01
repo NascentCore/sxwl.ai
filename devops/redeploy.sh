@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Build tricorder.dev"
+echo "Build nascentcore.ai"
 yarn install
 yarn run build
 
