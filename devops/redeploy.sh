@@ -1,11 +1,13 @@
 #!/bin/bash
 
-echo "Build nascentcore.ai"
+job_name="nascentcore_ai"
+
+echo "Build ${job_name}"
+
 yarn install
-yarn run build
+yarn build
 
 # Restart the mainsite's nodejs server
-job_name="nascentcore_ai"
 pm2 stop ${job_name}
 pm2 delete ${job_name}
-pm2 start yarn --name ${job_name} -- run start
+pm2 start yarn --name=${job_name} start --port=3001
