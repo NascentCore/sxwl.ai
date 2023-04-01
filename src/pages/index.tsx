@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,10 +31,14 @@ export default function Home() {
               集群
             </div>
             <div className="nai_home_cove_text">
-              诚邀深度学习领域专家加入我们
+              <Link href="https://wenjuan.feishu.cn/m?t=sT0CPNNzNhLi-qegt">
+                诚邀深度学习领域专家加入我们
+              </Link>
             </div>
             <div className="nai_home_cove_text" style={{ marginBottom: 0 }}>
-              敬请关注
+              <Link href="https://wenjuan.feishu.cn/m?t=sJHPnI4jPhLi-g0wr">
+                敬请关注
+              </Link>
             </div>
           </div>
           <div className="nai_home_qr_wrap">
