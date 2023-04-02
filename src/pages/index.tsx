@@ -6,6 +6,7 @@ import Cover from "@/components/home/Cover";
 import Description from "@/components/home/Description";
 import QrCodePanel from "@/components/home/QrCodePanel";
 import { Box } from "@mui/material";
+import AppContainer from "@/components/home/AppContainer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,18 +20,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Box
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            background: "linear-gradient(to bottom,transparent,rgb(255,255,255))rgb(0,0,0)",
-          }}
-        >
-          <Cover />
-          <Description />
-          <QrCodePanel />
-        </Box>
+        <AppContainer>
+          <Box
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              background:
+                "linear-gradient(to bottom,transparent,rgb(255,255,255))rgb(0,0,0)",
+            }}
+          >
+            <Cover />
+            <Description />
+            <QrCodePanel />
+          </Box>
+        </AppContainer>
       </main>
     </>
   );

@@ -11,13 +11,14 @@ const Index = ({ t }: any) => {
         padding={"0 20px"}
         display={"flex"}
         justifyContent={"center"}
+        className={"nai_qrcode_wrap"}
       >
-        <Box marginRight={3}>
+        <div className="nai_qrcode_item">
           <Image width={320} height={445} src="/assets/join_qr.png" alt="" />
-        </Box>
-        <Box marginLeft={3}>
+        </div>
+        <div className="nai_qrcode_item">
           <Image width={320} height={445} src="/assets/follow_qr.png" alt="" />
-        </Box>
+        </div>
       </Box>
     </>
   );

@@ -1,0 +1,23 @@
+.app.desktop {
+  .home_cover_bg_img {
+    max-width: 1200px;
+    max-height: 720px;
+  }
+  .nai_qrcode_wrap {
+    .nai_qrcode_item {
+      margin: 0 30px;
+    }
+  }
+}
+
+.app.mobile {
+  .home_cover_bg_img {
+    width: 100%;
+  }
+  .nai_qrcode_wrap {
+    flex-direction: column;
+    .nai_qrcode_item {
+      margin-bottom: 30px;
+    }
+  }
+}
