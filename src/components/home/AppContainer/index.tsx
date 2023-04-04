@@ -3,10 +3,9 @@ import UA from "ua-device";
 
 type IProps = {
   children: any;
-  show: boolean;
 };
 
-const Index = ({ children, show }: IProps) => {
+const Index = ({ children }: IProps) => {
   const [device_type, set_device_type] = useState("desktop");
 
   useEffect(() => {
