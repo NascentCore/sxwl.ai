@@ -1,6 +1,6 @@
 import Link from "next/link";
-import React, { useEffect, useState, useContext } from "react";
-import { Card, Avatar, Typography, Box } from "@mui/material";
+import React from "react";
+import { Typography, Box } from "@mui/material";
 
 const Index = () => {
   const linkStyples = { textDecoration: "underline", color: "#3370ff" };

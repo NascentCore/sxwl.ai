@@ -3,17 +3,20 @@
 Docs for maitanining and operating the nascentcore.ai website.
 
 ## DNS Record
-|  Type   | Host  | Value
-|  ----  | ----  |  ----  |
-| CNAME  | nascentcore.ai | nascentcore.com |
-| CNAME  | www.nascentcore.ai | nascentcore.com |
-| A      | nascentcore.com | 3.219.32.128 |
-| A      | www.nascentcore.com | 3.219.32.128 |
+
+| Type  | Host                | Value           |
+| ----- | ------------------- | --------------- |
+| CNAME | nascentcore.ai      | nascentcore.com |
+| CNAME | www.nascentcore.ai  | nascentcore.com |
+| A     | nascentcore.com     | 3.219.32.128    |
+| A     | www.nascentcore.com | 3.219.32.128    |
 
 ## Nginx Config
+
 config location: `/etc/nginx/sites-available/default`
 
 config content:
+
 ```
 server {
     server_name tricorder.dev;
@@ -96,7 +99,9 @@ server {
 ```
 
 ## SSL
+
 if you want to renew or issue a ssl certificate, you can just execute command
+
 ```
 sudo certbot --nginx
 ```
