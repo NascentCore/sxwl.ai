@@ -22,13 +22,7 @@ export default function Home() {
       <main>
         <AppContainer>
           <Box
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              background:
-                "linear-gradient(to bottom,transparent,rgb(255,255,255))rgb(0,0,0)",
-            }}
+            className="home_page_wrap"
           >
             <Cover />
             <Description />

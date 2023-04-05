@@ -1,4 +1,14 @@
 .app.desktop {
+  .home_page_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(50, 50, 50),
+      rgb(255, 255, 255)
+    );
+  }
   .home_cover_bg_img {
     max-width: 1200px;
     max-height: 720px;
@@ -8,9 +18,28 @@
       margin: 0 30px;
     }
   }
+  .home_desc_typography_h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .home_desc_typography_text {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 .app.mobile {
+  .home_page_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(150, 150, 150),
+      rgb(255, 255, 255)
+    );
+  }
   .home_cover_bg_img {
     width: 100%;
   }
@@ -19,5 +48,14 @@
     .nai_qrcode_item {
       margin-bottom: 30px;
     }
+  }
+  .home_desc_typography_h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .home_desc_typography_text {
+    font-size: 26px;
+    margin-bottom: 30px;
   }
 }
