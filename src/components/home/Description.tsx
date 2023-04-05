@@ -8,7 +8,7 @@ const Index = () => {
     <>
       <Box maxWidth={1200} padding={"0 20px"}>
         <Typography variant="h1" className="home_desc_typography_h1">
-          媲美 Google、OpenAI 的大模型算力软件平台，支持千卡 nVidia A100 集群
+          媲美 Google、OpenAI 的大模型训练平台，支持千卡 nVidia A100 集群
         </Typography>
         <Typography variant="body1" className="home_desc_typography_text">
           诚邀深度学习领域专家
