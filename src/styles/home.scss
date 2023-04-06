@@ -1,4 +1,25 @@
+.home_cover_bg_wrap {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url("/assets/home_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .app.desktop {
+  .home_page_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_description {
+    padding-top: 100px;
+    color: #fff;
+  }
   .home_cover_bg_img {
     max-width: 1200px;
     max-height: 720px;
@@ -8,9 +29,27 @@
       margin: 0 30px;
     }
   }
+  .home_desc_typography_h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .home_desc_typography_text {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 .app.mobile {
+  .home_page_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home_description {
+    padding-top: 40px;
+    color: #fff;
+  }
   .home_cover_bg_img {
     width: 100%;
   }
@@ -19,5 +58,14 @@
     .nai_qrcode_item {
       margin-bottom: 30px;
     }
+  }
+  .home_desc_typography_h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .home_desc_typography_text {
+    font-size: 26px;
+    margin-bottom: 30px;
   }
 }

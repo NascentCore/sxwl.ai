@@ -1,14 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import Link from "next/link";
 import Cover from "@/components/home/Cover";
 import Description from "@/components/home/Description";
 import QrCodePanel from "@/components/home/QrCodePanel";
 import { Box } from "@mui/material";
 import AppContainer from "@/components/home/AppContainer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -21,15 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <AppContainer>
-          <Box
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              background:
-                "linear-gradient(to bottom,transparent,rgb(255,255,255))rgb(0,0,0)",
-            }}
-          >
+          <Box className="home_page_wrap">
             <Cover />
             <Description />
             <QrCodePanel />
