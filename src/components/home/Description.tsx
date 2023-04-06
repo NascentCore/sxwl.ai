@@ -6,7 +6,7 @@ const Index = () => {
   const linkStyples = { textDecoration: "underline", color: "#3370ff" };
   return (
     <>
-      <Box maxWidth={1200} padding={"0 20px"}>
+      <Box className="home_description" maxWidth={1200} padding={"0 20px"}>
         <Typography variant="h1" className="home_desc_typography_h1">
           媲美 Google、OpenAI 的大模型训练平台，支持千卡 nVidia A100 集群
         </Typography>
