@@ -7,8 +7,19 @@ const Index = () => {
   return (
     <>
       <Box className="home_description" maxWidth={1200} padding={"0 20px"}>
-        <Typography variant="h1" className="home_desc_typography_h1">
-          三千平台：千卡、千亿参数、千小时稳定高效训练
+        <Typography
+          variant="h1"
+          className="home_desc_typography_h1"
+          style={{ marginBottom: 15 }}
+        >
+          <span>三千</span>
+          平台：
+          <span>千</span>
+          卡、
+          <span>千</span>
+          亿参数、
+          <span>千</span>
+          小时稳定高效训练
         </Typography>
         <Typography variant="h1" className="home_desc_typography_h1">
           媲美 Google、OpenAI
