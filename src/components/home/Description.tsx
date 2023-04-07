@@ -8,7 +8,10 @@ const Index = () => {
     <>
       <Box className="home_description" maxWidth={1200} padding={"0 20px"}>
         <Typography variant="h1" className="home_desc_typography_h1">
-          媲美 Google、OpenAI 的大模型训练平台，支持千卡 nVidia A100 集群
+          三千平台：千卡、千亿参数、千小时稳定高效训练
+        </Typography>
+        <Typography variant="h1" className="home_desc_typography_h1">
+          媲美 Google、OpenAI
         </Typography>
         <Typography variant="body1" className="home_desc_typography_text">
           诚邀深度学习领域专家
