@@ -18,7 +18,7 @@ const Index = () => {
         <div className="nai_qrcode_item">
           <Image width={320} height={445} src="/assets/follow_qr.png" alt="" />
         </div>
-        <div className="wechat_qrcode_item">
+        <div className="nai_qrcode_item wechat_qrcode_item">
           <Image width={320} height={445} src="/assets/wechat_qr.jpg" alt="" />
         </div>
       </Box>
