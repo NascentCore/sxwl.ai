@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * 首页背景组件
+ */
 const Index = () => {
   return (
     <>

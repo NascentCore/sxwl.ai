@@ -1,6 +1,9 @@
 import moment from "moment";
 import { useRouter } from "next/router";
 
+/**
+ * blog卡片组件
+ */
 const BlogCard = ({ item }: any) => {
   const router = useRouter();
   const { title, description, timesStamp, poster, author } = item;

@@ -4,6 +4,9 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
+/**
+ * blog 预览页
+ */
 export default function Blog() {
   const router = useRouter();
   const { id } = router.query;

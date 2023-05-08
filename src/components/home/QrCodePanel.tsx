@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
+/**
+ * 首页 二维码 容器
+ */
 const Index = () => {
   return (
     <>

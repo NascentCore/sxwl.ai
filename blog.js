@@ -4,6 +4,10 @@ const matter = require("gray-matter");
 const { marked } = require("marked");
 const moment = require("moment");
 
+/**
+ * 解析 md 文档目录 转换成 html
+ * @param {string} fileDirPath
+ */
 function filteFileMdList(fileDirPath) {
   const listArr = [];
 
@@ -42,7 +46,7 @@ function filteFileMdList(fileDirPath) {
   return listArr;
 }
 
-function filteMdToHtml(filePath) {
+function convertMdToHtml(filePath) {
   const fileContents = fs.readFileSync(filePath, "utf8");
   const matterResult = matter(fileContents);
   const content = marked(matterResult.content);
@@ -64,7 +68,7 @@ function getBlogList() {
 
   for (let i = 0; i < mdListPath.length; i++) {
     const mdPath = mdListPath[i];
-    let matterResult = filteMdToHtml(mdPath);
+    let matterResult = convertMdToHtml(mdPath);
     _add.push(matterResult);
   }
   _add.sort((a, b) => {

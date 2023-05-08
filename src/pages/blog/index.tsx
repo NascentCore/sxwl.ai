@@ -3,6 +3,9 @@ import NewsCard from "@/components/Blog/NewsCard";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+/**
+ * blog 列表页面
+ */
 export default function Index() {
   const [list, setList] = useState<any>([]);
   useEffect(() => {

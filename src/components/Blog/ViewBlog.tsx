@@ -1,5 +1,8 @@
 import ShareBtn from "./ShareBtn";
 
+/**
+ * blog 预览容器
+ */
 export default function ViewBlog({ blogItem }: any) {
   const { title, content, date } = blogItem;
   return (

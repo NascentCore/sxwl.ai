@@ -2,8 +2,11 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
 
+/**
+ * 公共头部（预留组件，方便以后拓展）
+ */
 export default function Index() {
-  const [nav_position, set_nav_position] = useState(""); // 0 1 ,
+  const [nav_position, set_nav_position] = useState("");
   useEffect(() => {
     const sfn = (e: any) => {
       const scrollTop =

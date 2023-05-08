@@ -9,7 +9,7 @@ const Index = () => {
         <div className="home_nav">
           <div className="home_nav_item">
             <Link href={"/blog"}>
-              <span>博客</span>
+              <span>Blog</span>
             </Link>
           </div>
         </div>

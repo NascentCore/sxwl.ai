@@ -1,6 +1,9 @@
 import { Popover, QRCode } from "antd";
 import { useEffect, useState } from "react";
 
+/**
+ * 分享按钮组件
+ */
 export default function ShareBtn() {
   const content = <Content />;
   return (

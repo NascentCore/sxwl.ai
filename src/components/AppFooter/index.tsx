@@ -1,6 +1,9 @@
 import Logo from "../AppHeader/Logo";
 import Image from "next/image";
 
+/**
+ * 公共页面底部（预留组件，方便以后拓展
+ */
 export default function AppFooter() {
   return (
     <>
