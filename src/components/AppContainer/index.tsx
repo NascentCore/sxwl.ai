@@ -3,9 +3,13 @@ import UA from "ua-device";
 
 type IProps = {
   children: any;
+  className?: string;
 };
 
-const Index = ({ children }: IProps) => {
+/**
+ * 页面容器组件
+ */
+const Index = ({ children, className = "" }: IProps) => {
   const [device_type, set_device_type] = useState("desktop");
 
   useEffect(() => {
@@ -15,7 +19,9 @@ const Index = ({ children }: IProps) => {
 
   return (
     <>
-      <div className={`app ${device_type}`}>{children}</div>
+      <div className={`app ${device_type} ${className}`}>
+        <div className="app_container_wrap">{children}</div>
+      </div>
     </>
   );
 };

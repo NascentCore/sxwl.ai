@@ -10,21 +10,29 @@
   background-repeat: no-repeat;
 }
 
-.app.desktop {
+.app {
   .home_page_wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
   }
   .home_description {
-    padding-top: 100px;
+    position: relative;
     color: #fff;
+    max-width: 1200px;
+    height: calc(100vh - 80px - 200px);
+    padding: 100px 20px 0 20px;
   }
   .home_cover_bg_img {
     max-width: 1200px;
     max-height: 720px;
   }
   .nai_qrcode_wrap {
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
     .nai_qrcode_item {
       margin: 0 15px;
     }
@@ -33,12 +41,12 @@
     font-size: 45px;
     margin-bottom: 30px;
     font-weight: normal;
-    > span{
+    > span {
       display: inline-block;
       font-weight: bold;
       position: relative;
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         left: 0;
         right: 0;
@@ -54,6 +62,15 @@
   }
 }
 
+.app_container_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .app_container {
+    max-width: 1300px;
+    padding: 50px 0;
+  }
+}
 .app.mobile {
   .home_page_wrap {
     display: flex;
@@ -62,7 +79,10 @@
   }
   .home_description {
     padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #fff;
+    height: initial;
   }
   .home_cover_bg_img {
     width: 100%;
@@ -77,13 +97,13 @@
     font-size: 35px;
     margin-bottom: 30px;
     font-weight: normal;
-    > span{
+    > span {
       display: inline-block;
       font-weight: bold;
       position: relative;
       line-height: 160%;
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         left: 0;
         right: 0;
@@ -96,5 +116,35 @@
   .home_desc_typography_text {
     font-size: 26px;
     margin-bottom: 30px;
+  }
+  .app_container {
+    width: 100vw;
+  }
+}
+
+.home_nav {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+  color: #fff;
+  .home_nav_item {
+    color: #fff;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    > a {
+      color: inherit;
+      text-decoration: none;
+    }
+    &:hover > a {
+      border-bottom: 1px solid #fff;
+      font-weight: 700;
+    }
+  }
+}
+.app.mobile{
+  .home_nav{
+    display: none;
   }
 }

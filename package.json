@@ -7,24 +7,28 @@
     "build": "next build",
     "start": "next start --port 3001",
     "lint": "next lint",
-    "prettier": "prettier --write 'src/**/*.{js,ts,tsx}'"
+    "format": "prettier --write 'src/**/*.{js,ts,tsx}'"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.11.15",
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
+    "antd": "^5.4.6",
+    "axios": "^1.4.0",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
+    "gray-matter": "^4.0.3",
+    "marked": "^4.0.0",
+    "moment": "^2.29.4",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7",
     "typescript": "5.0.3",
     "ua-device": "^0.1.10"
   },
   "devDependencies": {
+    "@types/marked": "^4.3.0",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
