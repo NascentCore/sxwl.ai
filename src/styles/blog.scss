@@ -29,10 +29,15 @@
     color: #8a919f;
     margin-bottom: 20px;
   }
+  .post_shall_floor{
+    width: 800px;
+    margin: auto;
+
+  }
 }
 
 .ai_blog_card_wrap {
-  width: 590px;
+  width: 700px;
   position: relative;
   overflow: hidden;
   .ai_blog_card_inner {
@@ -91,6 +96,11 @@
         }
       }
     }
+    .ai_blog_card_qr_code {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
@@ -109,9 +119,11 @@
   }
   .ai_blog_card_wrap {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .ai_blog_card_img {
-    display: none;
+    // display: none;
   }
   .blog_container {
     padding: 50px 16px;
