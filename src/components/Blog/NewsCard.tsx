@@ -41,7 +41,8 @@ const BlogCard = ({ item }: any) => {
               e.stopPropagation();
             }}
           >
-            <QRCode value={qrCodeValue} size={140} />
+            <div className="ai_blog_card_qr_code_tip">分享到微信</div>
+            <QRCode value={qrCodeValue} size={120} />
           </div>
         </div>
       </div>

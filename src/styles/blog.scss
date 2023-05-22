@@ -29,10 +29,16 @@
     color: #8a919f;
     margin-bottom: 20px;
   }
-  .post_shall_floor{
-    width: 800px;
-    margin: auto;
-
+  .post_shall_floor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .post_shall_floor_tip {
+      color: #ff4d4f;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
   }
 }
 
@@ -100,6 +106,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      .ai_blog_card_qr_code_tip {
+        color: #ff4d4f;
+        margin-bottom: 8px;
+      }
     }
   }
 }
