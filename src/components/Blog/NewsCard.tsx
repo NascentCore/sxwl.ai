@@ -1,5 +1,7 @@
+import { QRCode } from "antd";
 import moment from "moment";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 /**
  * blog卡片组件
@@ -7,6 +9,10 @@ import { useRouter } from "next/router";
 const BlogCard = ({ item }: any) => {
   const router = useRouter();
   const { title, description, timesStamp, poster, author } = item;
+  const [qrCodeValue, setQrCodeValue] = useState("");
+  useEffect(() => {
+    setQrCodeValue(`${window.location.origin}/blog/${timesStamp}`);
+  }, []);
   return (
     <>
       <div
@@ -28,6 +34,15 @@ const BlogCard = ({ item }: any) => {
               </div>
             </div>
             <div className="ai_blog_card_subtitle">{description}</div>
+          </div>
+          <div
+            className="ai_blog_card_qr_code"
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
+          >
+            <div className="ai_blog_card_qr_code_tip">分享到微信</div>
+            <QRCode value={qrCodeValue} size={120} />
           </div>
         </div>
       </div>
