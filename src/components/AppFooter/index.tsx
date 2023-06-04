@@ -3,7 +3,7 @@ import Logo from "../AppHeader/Logo";
 import Image from "next/image";
 
 /**
- * 公共页面底部（预留组件，方便以后拓展
+ * 公共页面底部
  */
 export default function AppFooter() {
   // 商务合作邮箱
