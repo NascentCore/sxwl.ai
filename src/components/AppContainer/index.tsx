@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import UA from "ua-device";
+import AppFooter from "../AppFooter";
 
 type IProps = {
   children: any;
@@ -21,6 +22,7 @@ const Index = ({ children, className = "" }: IProps) => {
     <>
       <div className={`app ${device_type} ${className}`}>
         <div className="app_container_wrap">{children}</div>
+        <AppFooter />
       </div>
     </>
   );

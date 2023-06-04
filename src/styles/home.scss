@@ -30,7 +30,7 @@
   }
   .nai_qrcode_wrap {
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 20px 50px 20px;
     display: flex;
     justify-content: center;
     .nai_qrcode_item {
@@ -143,8 +143,8 @@
     }
   }
 }
-.app.mobile{
-  .home_nav{
+.app.mobile {
+  .home_nav {
     display: none;
   }
 }
