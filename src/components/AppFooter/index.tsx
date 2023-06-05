@@ -14,7 +14,7 @@ export default function AppFooter() {
   const resumeEmail = "join@deeplang.ai";
   // boss招聘主页
   const bossUrl =
-    "https://www.zhipin.com/gongsi/6d1e4b436619f4df1Xd43di-FFM~.html?ka=company-intro";
+    "https://www.zhipin.com/gongsi/6d1e4b436619f4df1Xd43di-FFM~.html?ka=search_rcmd_company_name_6d1e4b436619f4df1Xd43di-FFM~_custompage";
   // 飞书投递简历
   const feishuUrl = "https://wenjuan.feishu.cn/m/cfm?t=sT0CPNNzNhLi-qegt";
 
