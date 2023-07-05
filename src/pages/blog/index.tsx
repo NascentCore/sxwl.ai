@@ -18,7 +18,6 @@ export default function Index() {
     <>
       <AppContainer>
         <div className="app_container blog_container">
-          <div className="blog_list_title">新闻动态</div>
           {list.map((arr: any, i: number) => (
             <div className="blog_list_wrap" key={i}>
               {arr.map((item: any, j: number) => (
