@@ -8,6 +8,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: PingFang SC;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,4 +16,3 @@ body {
     color-scheme: dark;
   }
 }
-

@@ -1,55 +1,78 @@
-import Link from "next/link";
-import Logo from "./Logo";
-import { useEffect, useState } from "react";
+import React, { useState } from "react";
+import type { MenuProps } from "antd";
+import { Menu, Space, Image, Typography } from "antd";
+const { Title } = Typography;
 
-/**
- * 公共头部（预留组件，方便以后拓展）
- */
-export default function Index() {
-  const [nav_position, set_nav_position] = useState("");
-  useEffect(() => {
-    const sfn = (e: any) => {
-      const scrollTop =
-        document.documentElement.scrollTop || document.body.scrollTop;
-      if (scrollTop >= 0 && scrollTop <= 80) {
-        set_nav_position("");
-      } else if (scrollTop > 160 && scrollTop <= 200) {
-        set_nav_position(" app_header_hide");
-      } else if (scrollTop > 200) {
-        set_nav_position(" app_header_active");
-      }
-    };
-    window.addEventListener("scroll", sfn);
-    return () => {
-      window.removeEventListener("scroll", sfn);
-    };
-  }, []);
+const items: MenuProps["items"] = [
+  {
+    label: (
+      <>
+        <Space>
+          <Image preview={false} width={30} src={"/assets/github.svg"}></Image>
+          <Title level={4} style={{ marginBottom: 0 }}>
+            Lambda
+          </Title>
+        </Space>
+      </>
+    ),
+    key: "0",
+  },
+  {
+    label: "Cloud",
+    key: "1",
+  },
+  {
+    label: "Datacenter",
+    key: "2",
+  },
+  {
+    label: " Desktops",
+    key: "3",
+  },
+  {
+    label: "Company",
+    key: "4",
+  },
+  {
+    label: "Resources",
+    key: "5",
+  },
+];
+
+const App: React.FC = () => {
+  const [current, setCurrent] = useState("mail");
+
+  const onClick: MenuProps["onClick"] = (e) => {
+    console.log("click ", e);
+    setCurrent(e.key);
+  };
+
   return (
-    <>
-      <div className="app_header">
-        <div className={`app_header_inner${nav_position}`}>
-          <Logo />
-          <div className="app_nav">
-            <div className="app_nav_item">
-              <Link href={"/"}>
-                <span>首页</span>
-              </Link>
-            </div>
-            <div className="app_nav_item">
-              <Link href={"/blog"}>
-                <span>博客</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-        {nav_position != "" ? (
-          <>
-            <div style={{ height: "80px" }}></div>
-          </>
-        ) : (
-          <></>
-        )}
+    <div className="app_header">
+      <div
+        style={{
+          background: "linear-gradient(90deg, #8136e2, #3b2b9b)",
+          color: "#fff",
+          fontSize: "16px",
+          lineHeight: "24px",
+          padding: "8px 24px",
+          textAlign: "center",
+          fontFamily: "Camphor,sans-serif",
+        }}
+      >
+        Get on-demand access to NVIDIA H100s in Lambda Cloud! Spin up an
+        instance
       </div>
-    </>
+      <div>
+        <Menu
+          onClick={onClick}
+          selectedKeys={[current]}
+          mode="horizontal"
+          items={items}
+        />
+      </div>
+    </div>
   );
-}
+};
+
+export default App;
