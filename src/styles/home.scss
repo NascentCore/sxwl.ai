@@ -34,7 +34,11 @@
     margin-bottom: 20px;
     -webkit-text-fill-color: #0000;
     -webkit-background-clip: text;
-    background-image: linear-gradient(90deg, #484ba2, #f869e0);
+    background-image: linear-gradient(
+      90deg,
+      rgb(21, 45, 131),
+      rgb(84, 100, 155)
+    );
   }
   > p {
     font-size: 30px;
@@ -53,13 +57,26 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #9d66e5;
-      border: 2px solid #9d66e5;
+      background-color: rgb(21, 45, 131);
+      border: 2px solid rgb(21, 45, 131);
       border-radius: 0;
       color: #fff;
       font-family: Lato, sans-serif;
       font-size: 15px;
       cursor: pointer;
+    }
+  }
+}
+.app.mobile {
+  .home_cover_bg_wrap {
+    > h1 {
+      font-size: 60px;
+    }
+    > h2 {
+      font-size: 60px;
+    }
+    > p {
+      font-size: 20px;
     }
   }
 }
@@ -87,7 +104,7 @@
     line-height: 180%;
   }
   .public_cloud_item_btn {
-    color: #7030c4;
+    color: rgb(21, 45, 131);
     font-size: 17px;
     font-weight: 400;
   }

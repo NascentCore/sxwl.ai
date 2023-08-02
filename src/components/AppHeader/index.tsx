@@ -8,7 +8,7 @@ const items: MenuProps["items"] = [
     label: (
       <>
         <Space>
-          <Image preview={false} width={30} src={"/assets/github.svg"}></Image>
+          <Image preview={false} width={30} src={"/favicon.ico"}></Image>
           <Title level={4} style={{ marginBottom: 0 }}>
             Lambda
           </Title>
@@ -51,7 +51,8 @@ const App: React.FC = () => {
     <div className="app_header">
       <div
         style={{
-          background: "linear-gradient(90deg, #8136e2, #3b2b9b)",
+          background:
+            "linear-gradient(90deg, rgb(21, 45, 131), rgb(84, 100, 155))",
           color: "#fff",
           fontSize: "16px",
           lineHeight: "24px",
