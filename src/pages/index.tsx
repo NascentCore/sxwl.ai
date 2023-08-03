@@ -1,7 +1,6 @@
 import Cover from "@/components/home/Cover";
-import Description from "@/components/home/Description";
-import QrCodePanel from "@/components/home/QrCodePanel";
 import AppContainer from "@/components/AppContainer";
+import BannerRow from "@/components/home/BannerRow";
 
 export default function Home() {
   return (
@@ -9,8 +8,7 @@ export default function Home() {
       <AppContainer className="home_page_wrap">
         <div>
           <Cover />
-          <Description />
-          <QrCodePanel />
+          <BannerRow />
         </div>
       </AppContainer>
     </>
