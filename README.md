@@ -75,31 +75,6 @@ poster: 缩略图片url
 - `npm run lint`: 运行 eslint 检查代码规范
 - `npm run format`: 格式化代码
 
-## 目录结构
-
-.
-├── README.md
-├── \_posts
-├── blog.js
-├── devops
-│ ├── README.md
-│ └── redeploy.sh
-├── next-env.d.ts
-├── next.config.js
-├── package-lock.json
-├── package.json
-├── public
-│ ├── assets
-│ └── favicon.ico
-├── src
-│ ├── components
-│ ├── pages
-│ ├── styles
-│ ├── types
-│ └── utils
-├── tsconfig.json
-└── yarn.lock
-
 ## 其它说明
 
 - 本项目使用 eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代码前运行 `npm run lint` 和 `npm run format`。
