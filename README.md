@@ -1,9 +1,8 @@
 # nascentcore.ai
-算想未来主页
 
-## 项目简介
-
-算想未来 company page 是一个基于 React 前端框架搭建的 Web 应用，采用了 Next.js 作为服务器端渲染框架进行开发。通过 TypeScript 对代码进行类型约束。配合 Material-UI 组件库和 Emotion CSS-in-JS 库实现界面开发。并且遵循了 ESLint、Prettier 和 Commitlint 等规范化工具的代码风格。
+算想未来 company page 是一个基于 React 前端框架搭建的 Web 应用，采用了 Next.js 作为服务器端渲染框架进行开发。
+通过 TypeScript 对代码进行类型约束。配合 Material-UI 组件库和 Emotion CSS-in-JS 库实现界面开发。
+并且遵循了 ESLint、Prettier 和 Commitlint 等规范化工具的代码风格。
 
 ## 技术栈
 
