@@ -79,7 +79,7 @@ poster: 缩略图片url
 - 本项目使用 eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代码前运行 `npm run lint` 和 `npm run format`。
 - 本项目使用了 husky 和 lint-staged 工具，在提交代码时会自动格式化代码，并且只检查本次提交的文件。
 
-## Deployment
+## 部署
 
 ```
 # Login AWS machine
