@@ -1,9 +1,8 @@
 # nascentcore.ai
-算想未来主页
 
-## 项目简介
-
-算想未来 company page 是一个基于 React 前端框架搭建的 Web 应用，采用了 Next.js 作为服务器端渲染框架进行开发。通过 TypeScript 对代码进行类型约束。配合 Material-UI 组件库和 Emotion CSS-in-JS 库实现界面开发。并且遵循了 ESLint、Prettier 和 Commitlint 等规范化工具的代码风格。
+算想未来 company page 是一个基于 React 前端框架搭建的 Web 应用，采用了 Next.js 作为服务器端渲染框架进行开发。
+通过 TypeScript 对代码进行类型约束。配合 Material-UI 组件库和 Emotion CSS-in-JS 库实现界面开发。
+并且遵循了 ESLint、Prettier 和 Commitlint 等规范化工具的代码风格。
 
 ## 技术栈
 
@@ -75,37 +74,12 @@ poster: 缩略图片url
 - `npm run lint`: 运行 eslint 检查代码规范
 - `npm run format`: 格式化代码
 
-## 目录结构
-
-.
-├── README.md
-├── \_posts
-├── blog.js
-├── devops
-│ ├── README.md
-│ └── redeploy.sh
-├── next-env.d.ts
-├── next.config.js
-├── package-lock.json
-├── package.json
-├── public
-│ ├── assets
-│ └── favicon.ico
-├── src
-│ ├── components
-│ ├── pages
-│ ├── styles
-│ ├── types
-│ └── utils
-├── tsconfig.json
-└── yarn.lock
-
 ## 其它说明
 
 - 本项目使用 eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代码前运行 `npm run lint` 和 `npm run format`。
 - 本项目使用了 husky 和 lint-staged 工具，在提交代码时会自动格式化代码，并且只检查本次提交的文件。
 
-## Deployment
+## 部署
 
 ```
 # Login AWS machine

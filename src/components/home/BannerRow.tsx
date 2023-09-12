@@ -29,7 +29,7 @@ const Index = () => {
             <CloudCard
               title={"On-Demand Cloud"}
               subTitle={
-                " Spin up on-demand GPUs billed by the hour. H100 instances starting at $1.99/hr."
+                "Spin up on-demand GPUs billed by the hour. H100 instances starting at $1.99/hr."
               }
               button={"Launch an instance"}
             />
