@@ -1,22 +1,11 @@
 import React, { useState } from "react";
 import type { MenuProps } from "antd";
-import { Menu, Space, Image, Typography } from "antd";
+import { Menu, Space, Image, Typography, Row, Col } from "antd";
+import LanguageChange from "./LanguageChange";
+import { useTranslation } from "@/locales/useTranslation";
 const { Title } = Typography;
 
 const items: MenuProps["items"] = [
-  {
-    label: (
-      <>
-        <Space>
-          <Image preview={false} width={30} src={"/favicon.ico"}></Image>
-          <Title level={4} style={{ marginBottom: 0 }}>
-            Lambda
-          </Title>
-        </Space>
-      </>
-    ),
-    key: "0",
-  },
   {
     label: "Cloud",
     key: "1",
@@ -26,20 +15,13 @@ const items: MenuProps["items"] = [
     key: "2",
   },
   {
-    label: " Desktops",
-    key: "3",
-  },
-  {
     label: "Company",
-    key: "4",
-  },
-  {
-    label: "Resources",
-    key: "5",
+    key: "3",
   },
 ];
 
 const App: React.FC = () => {
+  const t = useTranslation();
   const [current, setCurrent] = useState("mail");
 
   const onClick: MenuProps["onClick"] = (e) => {
@@ -59,18 +41,28 @@ const App: React.FC = () => {
           padding: "8px 24px",
           textAlign: "center",
           fontFamily: "Camphor,sans-serif",
+          minHeight: 40,
         }}
       >
-        Get on-demand access to NVIDIA H100s in Lambda Cloud! Spin up an
-        instance
+        {t.headerBanner}
       </div>
       <div>
-        <Menu
-          onClick={onClick}
-          selectedKeys={[current]}
-          mode="horizontal"
-          items={items}
-        />
+        <Row align={"middle"} style={{ padding: "0 40px" }}>
+          <Col>
+            <Image preview={false} width={30} src={"/favicon.ico"}></Image>
+          </Col>
+          <Col flex={1}>
+            <Menu
+              onClick={onClick}
+              selectedKeys={[current]}
+              mode="horizontal"
+              items={items}
+            />
+          </Col>
+          <Col>
+            <LanguageChange />
+          </Col>
+        </Row>
       </div>
     </div>
   );

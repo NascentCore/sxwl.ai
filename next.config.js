@@ -10,6 +10,10 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  i18n: {
+    defaultLocale: "zh",
+    locales: ["en", "zh"],
+  },
 };
 
 module.exports = nextConfig;

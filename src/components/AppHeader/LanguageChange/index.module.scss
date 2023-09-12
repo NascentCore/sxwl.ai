@@ -1,0 +1,28 @@
+.languageBtnPopup {
+  .languageBtnPopupItem {
+    width: 120px;
+    height: 32px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(11, 32, 74, 0.04);
+    }
+  }
+}
+
+.languageBtn {
+  font-weight: 400;
+  font-size: 14px;
+  color: #3b3b3b;
+  display: flex;
+  align-items: center;
+  margin-right: 28px;
+  cursor: default;
+
+  .languageBtnText {
+    margin: 0 5px;
+  }
+}
