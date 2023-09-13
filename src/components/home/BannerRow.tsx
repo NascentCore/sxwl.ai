@@ -3,13 +3,14 @@ import { Col, Divider, Row } from "antd";
 import { Typography } from "antd";
 import CloudCard from "./CloudCard";
 import { useTranslation } from "@/locales/useTranslation";
+import styles from "./index.module.scss";
 const { Title } = Typography;
 
 const Index = () => {
   const t = useTranslation();
   return (
     <>
-      <div className="home_banner_wrap">
+      <div className={styles.homeBannerWrap}>
         <Divider orientation="left" orientationMargin="0">
           <div>{t.separatorText}</div>
         </Divider>

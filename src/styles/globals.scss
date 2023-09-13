@@ -17,3 +17,18 @@ body {
     color-scheme: dark;
   }
 }
+
+.app_container_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .app_container {
+    max-width: 1300px;
+    padding: 50px 0;
+  }
+}
+.app.mobile {
+  .app_container {
+    width: 100vw;
+  }
+}

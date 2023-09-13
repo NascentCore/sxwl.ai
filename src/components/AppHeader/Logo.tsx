@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import styles from "./index.module.scss";
 
 /**
  * logo组件
@@ -8,7 +9,7 @@ export default function Logo() {
   return (
     <>
       <div
-        className="logo_wrap"
+        className={styles.logoWrap}
         onClick={() => {
           router.push("/");
         }}

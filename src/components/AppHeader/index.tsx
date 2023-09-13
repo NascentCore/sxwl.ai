@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { MenuProps } from "antd";
 import { Menu, Space, Image, Typography, Row, Col } from "antd";
 import LanguageChange from "./LanguageChange";
@@ -6,6 +6,10 @@ import { useTranslation } from "@/locales/useTranslation";
 const { Title } = Typography;
 
 const App: React.FC = () => {
+  const [show, setShow] = useState<boolean>(false);
+  useEffect(() => {
+    setShow(true);
+  }, []);
   const t = useTranslation();
   const items: MenuProps["items"] = [
     {
@@ -29,7 +33,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="app_header">
+    <div className="app_header" style={{ display: !show ? "none" : "" }}>
       <div
         style={{
           background:
