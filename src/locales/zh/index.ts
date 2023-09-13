@@ -3,30 +3,31 @@ export default {
   localeText: "简体中文",
   headerBanner: "",
   navigationBar: {
-    cloud: "Cloud",
-    datacenter: "Datacenter",
-    company: "Company",
+    cloud: "云计算",
+    datacenter: "数据中心",
+    company: "公司",
   },
   homepageCover: {
-    title: "Limitless access to GPUs for deep learning",
-    subTitle: "Launch an NVIDIA H100 GPU right now for just $1.99/hr.",
-    buttonText: 'Launch instance'
+    title: "无限访问GPU",
+    subTitle: "用于深度学习",
+    description: "立即启动NVIDIA H100 GPU，每小时仅需$1.99。",
+    buttonText: '启动实例'
   },
-  separatorText: 'PUBLIC CLOUD',
+  separatorText: '公共云',
   publicCloud: {
-    title: "The only public cloud designed for training LLMs & Generative AI",
+    title: "唯一专为LLMs和生成式AI训练而设计的公共云",
     cardOne: {
-      title: "On-Demand Cloud",
-      subTitle: "Spin up on-demand GPUs billed by the hour. H100 instances starting at",
-      price: "$1.99/hr.",
-      buttonText: "Launch an instance"
+      title: "按需云计算",
+      subTitle: "按小时计费的按需GPU实例。H100实例起价",
+      price: "$1.99/小时",
+      buttonText: "启动实例"
 
     },
     cardTwo: {
-      title: "On-Demand Cloud",
-      subTitle: "Spin up on-demand GPUs billed by the hour. H100 instances starting at",
-      price: "$1.99/hr.",
-      buttonText: "Launch an instance"
+      title: "按需云计算",
+      subTitle: "按小时计费的按需GPU实例。H100实例起价",
+      price: "$1.99/小时",
+      buttonText: "启动实例"
     }
   },
   footer: {
@@ -42,4 +43,3 @@ export default {
     companyAddressValue: "北京市海淀区 清华科技园 威盛大厦",
   }
 };
-

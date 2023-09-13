@@ -8,8 +8,9 @@ export default {
     company: "Company",
   },
   homepageCover: {
-    title: "Limitless access to GPUs for deep learning",
-    subTitle: "Launch an NVIDIA H100 GPU right now for just $1.99/hr.",
+    title: "Limitless access to GPUs",
+    subTitle: "for deep learning",
+    description: "Launch an NVIDIA H100 GPU right now for just $1.99/hr.",
     buttonText: 'Launch instance'
   },
   separatorText: 'PUBLIC CLOUD',
@@ -30,15 +31,15 @@ export default {
     }
   },
   footer: {
-    companyName: "算想未来",
-    operation: "本网站由北京算想未来有限责任公司运营",
-    copyright: "©️2023 nascentcore.ai 版权所有",
-    joinUs: "加入我们",
-    businessCooperationEmail: "商务合作邮箱",
+    companyName: "NascentCore",
+    operation: "This website is operated by NascentCore Co., Ltd.",
+    copyright: "©️2023 nascentcore.ai All rights reserved",
+    joinUs: "Join us",
+    businessCooperationEmail: "Business cooperation email",
     businessCooperationEmailValue: "bd@deeplang.ai",
-    resumeSubmissionEmail: "简历投递邮箱",
+    resumeSubmissionEmail: "Resume submission email",
     resumeSubmissionEmailValue: "bd@deeplang.ai",
-    companyAddress: "公司地址",
-    companyAddressValue: "北京市海淀区 清华科技园 威盛大厦",
+    companyAddress: "Company address",
+    companyAddressValue: "Weisheng Building, Tsinghua Science Park, Haidian District, Beijing, China",
   }
 };

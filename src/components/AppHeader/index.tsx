@@ -5,23 +5,22 @@ import LanguageChange from "./LanguageChange";
 import { useTranslation } from "@/locales/useTranslation";
 const { Title } = Typography;
 
-const items: MenuProps["items"] = [
-  {
-    label: "Cloud",
-    key: "1",
-  },
-  {
-    label: "Datacenter",
-    key: "2",
-  },
-  {
-    label: "Company",
-    key: "3",
-  },
-];
-
 const App: React.FC = () => {
   const t = useTranslation();
+  const items: MenuProps["items"] = [
+    {
+      label: t.navigationBar.cloud,
+      key: 1,
+    },
+    {
+      label: t.navigationBar.datacenter,
+      key: 2,
+    },
+    {
+      label: t.navigationBar.company,
+      key: 3,
+    },
+  ];
   const [current, setCurrent] = useState("mail");
 
   const onClick: MenuProps["onClick"] = (e) => {

@@ -7,13 +7,13 @@ interface INavigationBar {
 interface ICardDetails {
     title: string;
     subTitle: string;
-    price: string;
     buttonText: string;
 }
 
 interface IHomepageCover {
     title: string;
     subTitle: string;
+    description: string;
     buttonText: string;
 }
 
