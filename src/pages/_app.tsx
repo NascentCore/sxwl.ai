@@ -6,7 +6,11 @@ import { useEffect } from "react";
 const Language = () => {
   const { setLanguage } = useAppContext();
   useEffect(() => {
-    if (window.navigator.language.includes("zh")) {
+    const userMainLanguage = navigator.languages
+      ? navigator.languages[0]
+      : navigator.language;
+
+    if (userMainLanguage.includes("zh")) {
       setLanguage("zh");
     } else {
       setLanguage("en");

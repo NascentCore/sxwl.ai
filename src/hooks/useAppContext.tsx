@@ -6,7 +6,6 @@ const AppContext = createContext<any>(null);
 
 export function AppProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState("zh");
-  const [t, setT] = useState(zh);
 
   const sharedData = {
     t: { zh, en }[language],
