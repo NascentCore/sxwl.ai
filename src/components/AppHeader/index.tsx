@@ -28,8 +28,10 @@ const App: React.FC = () => {
   const [current, setCurrent] = useState("mail");
 
   const onClick: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
     setCurrent(e.key);
+    if (e.key == 1) {
+      window.location.href = "https://nascentcore.ai/cloud";
+    }
   };
 
   return (
