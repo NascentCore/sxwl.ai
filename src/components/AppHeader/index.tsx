@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import type { MenuProps } from "antd";
 import { Menu, Space, Image, Typography, Row, Col } from "antd";
 import LanguageChange from "./LanguageChange";
-import { useTranslation } from "@/locales/useTranslation";
+import { useAppContext } from "@/hooks/useAppContext";
 const { Title } = Typography;
 
 const App: React.FC = () => {
@@ -10,7 +10,7 @@ const App: React.FC = () => {
   useEffect(() => {
     setShow(true);
   }, []);
-  const t = useTranslation();
+  const { t } = useAppContext();
   const items: MenuProps["items"] = [
     {
       label: t.navigationBar.cloud,

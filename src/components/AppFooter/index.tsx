@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Logo from "../AppHeader/Logo";
 import { Col, Divider, Row, Space, Typography, Image } from "antd";
-import { useTranslation } from "@/locales/useTranslation";
+import { useAppContext } from "@/hooks/useAppContext";
 const { Title, Text } = Typography;
 
 /**
  * 公共页面底部
  */
 export default function AppFooter() {
-  const t = useTranslation();
+  const { t } = useAppContext();
   // boss招聘主页
   const bossUrl =
     "https://www.zhipin.com/gongsi/6d1e4b436619f4df1Xd43di-FFM~.html?ka=search_rcmd_company_name_6d1e4b436619f4df1Xd43di-FFM~_custompage";

@@ -1,12 +1,14 @@
-import { useTranslation } from "@/locales/useTranslation";
 import React from "react";
 import styles from "./index.module.scss";
+import { useAppContext } from "@/hooks/useAppContext";
 
 /**
  * 首页背景组件
  */
 const Index = () => {
-  const t = useTranslation();
+  const { t } = useAppContext();
+  const aaaa = useAppContext();
+  console.log(aaaa);
   return (
     <>
       <div className={styles.homeCoverBgWrap}>
