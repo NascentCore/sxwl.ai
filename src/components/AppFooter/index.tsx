@@ -1,18 +1,14 @@
 import Link from "next/link";
 import Logo from "../AppHeader/Logo";
 import { Col, Divider, Row, Space, Typography, Image } from "antd";
+import { useTranslation } from "@/locales/useTranslation";
 const { Title, Text } = Typography;
 
 /**
  * 公共页面底部
  */
 export default function AppFooter() {
-  // 商务合作邮箱
-  const businessEmail = "bd@deeplang.ai";
-  // 公司地址
-  const companyAddress = "北京市海淀区 清华科技园 威盛大厦";
-  // 简历投递邮箱
-  const resumeEmail = "join@deeplang.ai";
+  const t = useTranslation();
   // boss招聘主页
   const bossUrl =
     "https://www.zhipin.com/gongsi/6d1e4b436619f4df1Xd43di-FFM~.html?ka=search_rcmd_company_name_6d1e4b436619f4df1Xd43di-FFM~_custompage";
@@ -28,30 +24,30 @@ export default function AppFooter() {
             <Space align={"center"}>
               <Image preview={false} width={30} src={"/favicon.ico"}></Image>
               <Title level={4} style={{ margin: 0 }}>
-                算想未来
+                {t.footer.companyName}
               </Title>
             </Space>
           </div>
           <div>
-            <Text>本网站由北京算想未来有限责任公司运营</Text>
+            <Text>{t.footer.operation}</Text>
           </div>
           <div>
-            <Text>©️2023 nascentcore.ai 版权所有</Text>
+            <Text>{t.footer.copyright}</Text>
           </div>
         </Col>
         <Col xs={24} sm={5}>
-          <Text>加入我们</Text>
+          <Text>{t.footer.joinUs}</Text>
           <div style={{ height: 50 }}></div>
-          <Title level={5}>商务合作邮箱</Title>
-          <Text>{businessEmail}</Text>
-          <Title level={5}>公司地址</Title>
-          <Text>{companyAddress}</Text>
+          <Title level={5}>{t.footer.businessCooperationEmail}</Title>
+          <Text>{t.footer.businessCooperationEmailValue}</Text>
+          <Title level={5}>{t.footer.companyAddress}</Title>
+          <Text>{t.footer.companyAddress}</Text>
         </Col>
         <Col xs={24} sm={4}>
-          <Text>加入我们</Text>
+          <Text>{t.footer.joinUs}</Text>
           <div style={{ height: 50 }}></div>
-          <Title level={5}>简历投递邮箱</Title>
-          <Text>{resumeEmail}</Text>
+          <Title level={5}>{t.footer.resumeSubmissionEmail}</Title>
+          <Text>{t.footer.resumeSubmissionEmailValue}</Text>
           <div>
             <Space size={"large"} style={{ marginTop: 20 }}>
               <Link href={bossUrl} target="__blank">

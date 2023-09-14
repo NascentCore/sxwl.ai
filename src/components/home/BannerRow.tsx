@@ -2,14 +2,17 @@ import React from "react";
 import { Col, Divider, Row } from "antd";
 import { Typography } from "antd";
 import CloudCard from "./CloudCard";
+import { useTranslation } from "@/locales/useTranslation";
+import styles from "./index.module.scss";
 const { Title } = Typography;
 
 const Index = () => {
+  const t = useTranslation();
   return (
     <>
-      <div className="home_banner_wrap">
+      <div className={styles.homeBannerWrap}>
         <Divider orientation="left" orientationMargin="0">
-          <div>PUBLIC CLOUD</div>
+          <div>{t.separatorText}</div>
         </Divider>
         <Row>
           <div
@@ -20,27 +23,21 @@ const Index = () => {
               width: "100%",
             }}
           >
-            <Title level={1}>
-              The only public cloud designed for training LLMs & Generative AI
-            </Title>
+            <Title level={1}>{t.publicCloud.title}</Title>
           </div>
 
           <Col xs={24} sm={12}>
             <CloudCard
-              title={"On-Demand Cloud"}
-              subTitle={
-                " Spin up on-demand GPUs billed by the hour. H100 instances starting at $1.99/hr."
-              }
-              button={"Launch an instance"}
+              title={t.publicCloud.cardOne.title}
+              subTitle={t.publicCloud.cardOne.subTitle}
+              button={t.publicCloud.cardOne.buttonText}
             />
           </Col>
           <Col xs={24} sm={12}>
             <CloudCard
-              title={"On-Demand Cloud"}
-              subTitle={
-                " Spin up on-demand GPUs billed by the hour. H100 instances starting at $1.99/hr."
-              }
-              button={"Launch an instance"}
+              title={t.publicCloud.cardTwo.title}
+              subTitle={t.publicCloud.cardTwo.subTitle}
+              button={t.publicCloud.cardTwo.buttonText}
             />
           </Col>
         </Row>

@@ -1,23 +1,4 @@
-.home_banner_wrap {
-  padding: 0 40px;
-}
-
-.app_container_wrap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  .app_container {
-    max-width: 1300px;
-    padding: 50px 0;
-  }
-}
-.app.mobile {
-  .app_container {
-    width: 100vw;
-  }
-}
-
-.home_cover_bg_wrap {
+.homeCoverBgWrap {
   font-family: Camphor, sans-serif;
   padding-top: 80px;
   margin-bottom: 30px;
@@ -25,7 +6,9 @@
     font-size: 90px;
     text-align: center;
     font-weight: 700;
-    // margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 60px;
+    }
   }
   > h2 {
     font-size: 90px;
@@ -39,19 +22,25 @@
       rgb(21, 45, 131),
       rgb(84, 100, 155)
     );
+    @media screen and (max-width: 768px) {
+      font-size: 60px;
+    }
   }
   > p {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
     font-weight: 300;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
   }
-  .home_row_btn_wrap {
+  .homeRowBtnWrap {
     padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    .home_row_btn {
+    .homeRowBtn {
       width: 210px;
       height: 52px;
       display: flex;
@@ -67,43 +56,33 @@
     }
   }
 }
-.app.mobile {
-  .home_cover_bg_wrap {
-    > h1 {
-      font-size: 60px;
-    }
-    > h2 {
-      font-size: 60px;
-    }
-    > p {
-      font-size: 20px;
-    }
-  }
-}
 
-.public_cloud_item {
+.homeBannerWrap {
+  padding: 0 40px;
+}
+.publicCloudItem {
   padding: 30px;
   text-align: center;
-  .public_cloud_item_icon {
+  .publicCloudItemIcon {
     width: 68px;
     height: 68px;
     margin: auto;
     margin-bottom: 20px;
   }
-  .public_cloud_item_title {
+  .publicCloudItemTitle {
     color: #150727;
     font-family: Camphor, sans-serif;
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 20px;
   }
-  .public_cloud_item_desc {
+  .publicCloudItemDesc {
     font-size: 17px;
     font-weight: 300;
     margin-bottom: 10px;
     line-height: 180%;
   }
-  .public_cloud_item_btn {
+  .publicCloudItemBtn {
     color: rgb(21, 45, 131);
     font-size: 17px;
     font-weight: 400;

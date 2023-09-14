@@ -1,17 +1,20 @@
+import { useTranslation } from "@/locales/useTranslation";
 import React from "react";
+import styles from "./index.module.scss";
 
 /**
  * 首页背景组件
  */
 const Index = () => {
+  const t = useTranslation();
   return (
     <>
-      <div className="home_cover_bg_wrap home_banner_wrap">
-        <h1>Limitless access to GPUs</h1>
-        <h2>for deep learning</h2>
-        <p>Launch an NVIDIA H100 GPU right now for just $1.99/hr.</p>
-        <div className="home_row_btn_wrap">
-          <div className="home_row_btn">Launch instance</div>
+      <div className={styles.homeCoverBgWrap}>
+        <h1>{t.homepageCover.title}</h1>
+        <h2>{t.homepageCover.subTitle}</h2>
+        <p>{t.homepageCover.description}</p>
+        <div className={styles.homeRowBtnWrap}>
+          <div className={styles.homeRowBtn}>{t.homepageCover.buttonText}</div>
         </div>
       </div>
     </>
