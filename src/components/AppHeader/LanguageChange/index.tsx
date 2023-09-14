@@ -3,13 +3,14 @@
  */
 import { useEffect, useState, useTransition } from "react";
 import { Button, Popover, Tooltip } from "antd";
-import { useTranslation } from "@/locales/useTranslation";
 import { TranslationOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
+import { useAppContext } from "@/hooks/useAppContext";
 
 const Index = () => {
   const { locale } = useRouter();
-  const t = useTranslation();
+  const { t } = useAppContext();
+  const { language, setLanguage } = useAppContext();
 
   return (
     <>
@@ -22,10 +23,10 @@ const Index = () => {
           type="link"
           icon={<TranslationOutlined />}
           onClick={() => {
-            if (locale === "zh") {
-              window.location.href = `/en`;
-            } else if (locale === "en") {
-              window.location.href = `/`;
+            if (language === "zh") {
+              setLanguage("en");
+            } else if (language === "en") {
+              setLanguage("zh");
             }
           }}
         >

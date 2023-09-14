@@ -2,12 +2,12 @@ import React from "react";
 import { Col, Divider, Row } from "antd";
 import { Typography } from "antd";
 import CloudCard from "./CloudCard";
-import { useTranslation } from "@/locales/useTranslation";
 import styles from "./index.module.scss";
+import { useAppContext } from "@/hooks/useAppContext";
 const { Title } = Typography;
 
 const Index = () => {
-  const t = useTranslation();
+  const { t } = useAppContext();
   return (
     <>
       <div className={styles.homeBannerWrap}>
