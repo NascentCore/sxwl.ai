@@ -21,16 +21,31 @@ Config file: [nginx.conf](nginx.conf).
 
 ## SSL
 
-if you want to renew or issue a ssl certificate, you can just execute command
+Certbot uses [letsencrypt](https://letsencrypt.org/) to provide the root certificate,
+and request certificates from letsencrypt.
 
+* Setup domain name resolution to host IP
+* Setup HTTP server on the specified IP
+* Certbot insert `include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot` to
+  nginx config, to prove the ownership of the IP and domain name to lets encrypt
+* Letsencrypt then issues certificate to certbot
+* Certbot then inserts configs to nginx config
+  ```
+  ssl_certificate /etc/letsencrypt/live/nascentcore.cn/fullchain.pem; # managed by Certbot
+  ssl_certificate_key /etc/letsencrypt/live/nascentcore.cn/privkey.pem; # managed by Certbot
+  ```
+
+To invoke certbot to renew certificat:
 ```
 sudo certbot --nginx
 ```
 
-## issues new ceritifcation 
-if you have a new domain
-like `nascentcore.cn` and `www.nascentcore.cn`
-1. add these line to `/etc/nginx/sites-available/default`
+## Issue new ceritifcate
+
+To add a new domain to nginx, for example `nascentcore.cn`, find the config file
+located under `/etc/nginx/sites-available/default`, add configuration to start the
+http service for the added domain:
+
 ```
 server {
     server_name www.nascentcore.cn;
@@ -40,86 +55,10 @@ server {
 
     listen 80; # managed by Certbot
 }
-
-server {
-    server_name www.nascentcore.cn;
-    location / {
-        proxy_pass http://127.0.0.1:3001;
-    }
-
-    listen 80; # managed by Certbot
-}
 ```
-2. execute `certboot` to activate HTTPS, nginx conf will be auto reload.
+
+Then start certbot, certbot will then automatically repeat the above process to get new
+certificate for this new domain `nascencore.cn`:
 ```
 sudo certbot --nginx
-```
-
-```
-ubuntu@ip-172-31-88-51:/etc/nginx$ sudo certbot --nginx
-Saving debug log to /var/log/letsencrypt/letsencrypt.log
-
-Which names would you like to activate HTTPS for?
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-1: nascentcore.com
-2: nascentcore.ai
-3: nascentcore.cn
-4: www.nascentcore.ai
-5: www.nascentcore.cn
-6: www.nascentcore.com
-7: tricorder.dev
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Select the appropriate numbers separated by commas and/or spaces, or leave input
-blank to select all options shown (Enter 'c' to cancel): 3
-Requesting a certificate for nascentcore.cn
-
-Successfully received certificate.
-Certificate is saved at: /etc/letsencrypt/live/nascentcore.cn/fullchain.pem
-Key is saved at:         /etc/letsencrypt/live/nascentcore.cn/privkey.pem
-This certificate expires on 2023-07-15.
-These files will be updated when the certificate renews.
-Certbot has set up a scheduled task to automatically renew this certificate in the background.
-
-Deploying certificate
-Successfully deployed certificate for nascentcore.cn to /etc/nginx/sites-enabled/default
-Congratulations! You have successfully enabled HTTPS on https://nascentcore.cn
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-If you like Certbot, please consider supporting our work by:
- * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
- * Donating to EFF:                    https://eff.org/donate-le
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-ubuntu@ip-172-31-88-51:/etc/nginx$ sudo certbot --nginx
-Saving debug log to /var/log/letsencrypt/letsencrypt.log
-
-Which names would you like to activate HTTPS for?
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-1: nascentcore.com
-2: nascentcore.cn
-3: nascentcore.ai
-4: www.nascentcore.ai
-5: www.nascentcore.com
-6: www.nascentcore.cn
-7: tricorder.dev
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Select the appropriate numbers separated by commas and/or spaces, or leave input
-blank to select all options shown (Enter 'c' to cancel): 6
-Requesting a certificate for www.nascentcore.cn
-
-Successfully received certificate.
-Certificate is saved at: /etc/letsencrypt/live/www.nascentcore.cn/fullchain.pem
-Key is saved at:         /etc/letsencrypt/live/www.nascentcore.cn/privkey.pem
-This certificate expires on 2023-07-15.
-These files will be updated when the certificate renews.
-Certbot has set up a scheduled task to automatically renew this certificate in the background.
-
-Deploying certificate
-Successfully deployed certificate for www.nascentcore.cn to /etc/nginx/sites-enabled/default
-Congratulations! You have successfully enabled HTTPS on https://www.nascentcore.cn
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-If you like Certbot, please consider supporting our work by:
- * Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
- * Donating to EFF:                    https://eff.org/donate-le
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
