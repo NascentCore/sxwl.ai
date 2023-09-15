@@ -7,8 +7,6 @@ import { useAppContext } from "@/hooks/useAppContext";
  */
 const Index = () => {
   const { t } = useAppContext();
-  const aaaa = useAppContext();
-  console.log(aaaa);
   return (
     <>
       <div className={styles.homeCoverBgWrap}>
