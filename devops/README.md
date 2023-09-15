@@ -15,9 +15,9 @@ Docs for maitanining and operating the nascentcore.ai website.
 
 ## Nginx Config
 
-config location: `/etc/nginx/sites-available/nascentcore.ai`
+Config location on server: `/etc/nginx/sites-available/nascentcore.ai`
 
-config content: nginx.conf
+Config file: [nginx.conf](nginx.conf).
 
 ## SSL
 
