@@ -17,15 +17,8 @@
 
 ## 安装和使用
 
-1. 克隆仓库到本地
-
 ```bash
 git clone https://github.com/nascentcore/nascentcore.ai.git
-```
-
-2. 在项目根目录下安装依赖
-
-```bash
 cd nascentcore.ai/
 npm install
 npm run dev # 启动开发服务器
@@ -33,24 +26,6 @@ npm run build # 打包
 npm start # 以生产模式启动
 npm run lint # 运行 eslint 检查代码规范
 npm run format # 格式化代码
-```
-
-3. 启动开发服务器
-
-```bash
-npm run dev
-```
-
-4. 打包
-
-```bash
-npm run build
-```
-
-5. 以生产模式启动
-
-```bash
-npm start
 ```
 
 ## 博客使用方式
@@ -79,9 +54,12 @@ poster: 缩略图片url
 ## 部署
 
 ```
-# Login AWS machine
+# Login AWS machine, pending removal
 ssh -i dev-env/aws/ec2/key_pairs/us-east-1/tricorder.dev.pem ubuntu@tricorder.dev
-cd nascentcore.ai
-git pull
+
+# Login GCP machine, and switch to root user
+sudo su
+git clone https://github.com/nascentcore/nascentcore.ai.git
+cd nascentcore.ai/
 devops/redeploy.sh
 ```
