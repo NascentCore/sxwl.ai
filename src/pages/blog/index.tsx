@@ -10,7 +10,6 @@ export default function Index() {
   const [list, setList] = useState<any>([]);
   useEffect(() => {
     axios.get("/api/getBlogList").then((res) => {
-      // console.log(res);
       setList(convertTo2DArray(res.data.data, 2));
     });
   }, []);
