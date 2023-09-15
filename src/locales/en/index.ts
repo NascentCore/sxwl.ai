@@ -37,9 +37,9 @@ export default {
     copyright: "©️2023 nascentcore.ai All rights reserved",
     joinUs: "Join us",
     businessCooperationEmail: "Business cooperation email",
-    businessCooperationEmailValue: "bd@deeplang.ai",
+    businessCooperationEmailValue: "bd@nascentcore.ai",
     resumeSubmissionEmail: "Resume submission email",
-    resumeSubmissionEmailValue: "bd@deeplang.ai",
+    resumeSubmissionEmailValue: "hr@nascentcore.ai",
     companyAddress: "Company address",
     companyAddressValue:
       "Weisheng Building, Tsinghua Science Park, Haidian District, Beijing, China",
