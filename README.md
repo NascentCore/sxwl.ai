@@ -28,6 +28,11 @@ git clone https://github.com/nascentcore/nascentcore.ai.git
 ```bash
 cd nascentcore.ai/
 npm install
+npm run dev # 启动开发服务器
+npm run build # 打包
+npm start # 以生产模式启动
+npm run lint # 运行 eslint 检查代码规范
+npm run format # 格式化代码
 ```
 
 3. 启动开发服务器
@@ -65,14 +70,6 @@ poster: 缩略图片url
 ```
 
 需要注意的是，新建 md 文档的时候，时间`date`不能重复。
-
-## 命令列表
-
-- `npm run dev`: 启动开发服务器
-- `npm run build`: 打包
-- `npm start`: 以生产模式启动
-- `npm run lint`: 运行 eslint 检查代码规范
-- `npm run format`: 格式化代码
 
 ## 其它说明
 
