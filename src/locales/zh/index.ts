@@ -13,22 +13,6 @@ export default {
     description: "立即启动NVIDIA H100 GPU，每小时仅需$1.99。",
     buttonText: "启动实例",
   },
-  separatorText: "公共云",
-  publicCloud: {
-    title: "唯一专为LLMs和生成式AI训练而设计的公共云",
-    cardOne: {
-      title: "按需云计算",
-      subTitle: "按小时计费的按需GPU实例。H100实例起价",
-      price: "$1.99/小时",
-      buttonText: "启动实例",
-    },
-    cardTwo: {
-      title: "按需云计算",
-      subTitle: "按小时计费的按需GPU实例。H100实例起价",
-      price: "$1.99/小时",
-      buttonText: "启动实例",
-    },
-  },
   footer: {
     companyName: "算想未来",
     operation: "本网站由算想未来（北京）科技有限责任公司运营",
