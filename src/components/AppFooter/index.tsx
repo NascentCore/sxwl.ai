@@ -11,7 +11,7 @@ export default function AppFooter() {
   const { t } = useAppContext();
   // boss招聘主页
   const bossUrl =
-    "https://www.zhipin.com/gongsi/6d1e4b436619f4df1Xd43di-FFM~.html?ka=search_rcmd_company_name_6d1e4b436619f4df1Xd43di-FFM~_custompage";
+    "https://www.zhipin.com/gongsi/cec67883c0aa01401XN-29S_EFU~.html";
   // 飞书投递简历
   const feishuUrl = "https://wenjuan.feishu.cn/m/cfm?t=sT0CPNNzNhLi-qegt";
 
