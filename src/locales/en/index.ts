@@ -32,16 +32,15 @@ export default {
     },
   },
   footer: {
-    companyName: "NascentCore",
+    companyName: "NascentCore.AI",
     operation: "This website is operated by NascentCore Co., Ltd.",
-    copyright: "©️2023 nascentcore.ai All rights reserved",
-    joinUs: "Join us",
-    businessCooperationEmail: "Business cooperation email",
-    businessCooperationEmailValue: "bd@nascentcore.ai",
-    resumeSubmissionEmail: "Resume submission email",
+    copyright: "©️2023 NascentCore.AI All rights reserved",
+    bdEmail: "Business inquiry",
+    bdEmailValue: "bd@nascentcore.ai",
+    resumeSubmissionEmail: "Join us",
     resumeSubmissionEmailValue: "hr@nascentcore.ai",
-    companyAddress: "Company address",
+    companyAddress: "Address",
     companyAddressValue:
-      "Weisheng Building, Tsinghua Science Park, Haidian District, Beijing, China",
+      "Taili Yizhan, 12 Heiquan Road, Haidian District, Beijing, China",
   },
 };
