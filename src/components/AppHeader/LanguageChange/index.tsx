@@ -6,6 +6,7 @@ import { Button, Popover, Tooltip } from "antd";
 import { TranslationOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
 import { useAppContext } from "@/hooks/useAppContext";
+import { changeFavicon } from "@/utils";
 
 const Index = () => {
   const { locale } = useRouter();
@@ -14,6 +15,7 @@ const Index = () => {
 
   useEffect(() => {
     window.document.title = t.webTitle;
+    changeFavicon(t.locale === "zh" ? "/favicon.ico" : "/favicon-en.ico");
   }, [t.locale]);
 
   return (
