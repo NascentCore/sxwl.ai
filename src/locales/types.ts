@@ -34,6 +34,7 @@ interface IFooter {
 export interface IWebsiteConfig {
   locale: string;
   localeText: string;
+  webTitle: string;
   headerBanner: string;
   navigationBar: INavigationBar;
   homepageCover: IHomepageCover;

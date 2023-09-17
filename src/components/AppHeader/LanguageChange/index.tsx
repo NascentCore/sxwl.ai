@@ -12,6 +12,10 @@ const Index = () => {
   const { t } = useAppContext();
   const { language, setLanguage } = useAppContext();
 
+  useEffect(() => {
+    window.document.title = t.webTitle;
+  }, [t.locale]);
+
   return (
     <>
       <Tooltip
@@ -21,6 +25,10 @@ const Index = () => {
       >
         <Button
           type="link"
+          style={{
+            border: "none",
+            outline: "none",
+          }}
           icon={<TranslationOutlined />}
           onClick={() => {
             if (language === "zh") {
@@ -30,7 +38,7 @@ const Index = () => {
             }
           }}
         >
-          {t.localeText}
+          {language === "en" ? "简体中文" : "English"}
         </Button>
       </Tooltip>
     </>

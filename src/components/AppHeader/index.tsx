@@ -3,6 +3,7 @@ import type { MenuProps } from "antd";
 import { Menu, Space, Image, Typography, Row, Col } from "antd";
 import LanguageChange from "./LanguageChange";
 import { useAppContext } from "@/hooks/useAppContext";
+import styles from "./index.module.scss";
 const { Title } = Typography;
 
 const App: React.FC = () => {
@@ -16,13 +17,18 @@ const App: React.FC = () => {
       label: t.navigationBar.cloud,
       key: 1,
     },
+    // {
+    //   label: t.navigationBar.datacenter,
+    //   key: 2,
+    // },
+    // {
+    //   label: t.navigationBar.company,
+    //   key: 3,
+    // },
     {
-      label: t.navigationBar.datacenter,
-      key: 2,
-    },
-    {
-      label: t.navigationBar.company,
-      key: 3,
+      label: <LanguageChange />,
+      className: styles.languangeColNav,
+      key: 4,
     },
   ];
   const [current, setCurrent] = useState("mail");
@@ -35,7 +41,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="app_header" style={{ display: !show ? "none" : "" }}>
+    <div className={styles.appHeader} style={{ display: !show ? "none" : "" }}>
       <div
         style={{
           background:
@@ -52,9 +58,13 @@ const App: React.FC = () => {
         {t.headerBanner}
       </div>
       <div>
-        <Row align={"middle"} style={{ padding: "0 40px" }}>
-          <Col>
-            <Image preview={false} width={30} src={"/favicon.ico"}></Image>
+        <Row align={"middle"} style={{ padding: "0 20px" }}>
+          <Col className={styles.iconCol}>
+            <Image
+              preview={false}
+              width={30}
+              src={t.locale === "zh" ? "/favicon.ico" : "/favicon-en.ico"}
+            ></Image>
           </Col>
           <Col flex={1}>
             <Menu
@@ -64,7 +74,7 @@ const App: React.FC = () => {
               items={items}
             />
           </Col>
-          <Col>
+          <Col className={styles.languangeCol}>
             <LanguageChange />
           </Col>
         </Row>

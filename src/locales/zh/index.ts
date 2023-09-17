@@ -1,6 +1,7 @@
 export default {
   locale: "zh",
   localeText: "简体中文",
+  webTitle: "算想未来",
   headerBanner: "",
   navigationBar: {
     cloud: "云计算",
