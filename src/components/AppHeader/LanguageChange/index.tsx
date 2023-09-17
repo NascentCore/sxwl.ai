@@ -9,7 +9,7 @@ import { useAppContext } from "@/hooks/useAppContext";
 import { changeFavicon } from "@/utils";
 
 const Index = () => {
-  const { locale } = useRouter();
+  const { locale } =    useRouter();
   const { t } = useAppContext();
   const { language, setLanguage } = useAppContext();
 
