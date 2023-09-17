@@ -17,14 +17,14 @@ const App: React.FC = () => {
       label: t.navigationBar.cloud,
       key: 1,
     },
-    {
-      label: t.navigationBar.datacenter,
-      key: 2,
-    },
-    {
-      label: t.navigationBar.company,
-      key: 3,
-    },
+    // {
+    //   label: t.navigationBar.datacenter,
+    //   key: 2,
+    // },
+    // {
+    //   label: t.navigationBar.company,
+    //   key: 3,
+    // },
     {
       label: <LanguageChange />,
       className: styles.languangeColNav,
