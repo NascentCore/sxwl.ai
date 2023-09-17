@@ -11,7 +11,7 @@ export default function AppFooter() {
   const { t } = useAppContext();
   // boss招聘主页
   const bossUrl =
-    "https://www.zhipin.com/gongsi/6d1e4b436619f4df1Xd43di-FFM~.html?ka=search_rcmd_company_name_6d1e4b436619f4df1Xd43di-FFM~_custompage";
+    "https://www.zhipin.com/gongsi/cec67883c0aa01401XN-29S_EFU~.html";
   // 飞书投递简历
   const feishuUrl = "https://wenjuan.feishu.cn/m/cfm?t=sT0CPNNzNhLi-qegt";
 
@@ -20,7 +20,7 @@ export default function AppFooter() {
       <Row style={{ padding: 40 }}>
         <Divider />
         <Col xs={24} sm={15}>
-          <div style={{ marginBottom: 90 }}>
+          <div style={{ marginBottom: 10 }}>
             <Space align={"center"}>
               <Image preview={false} width={30} src={"/favicon.ico"}></Image>
               <Title level={4} style={{ margin: 0 }}>
@@ -36,16 +36,12 @@ export default function AppFooter() {
           </div>
         </Col>
         <Col xs={24} sm={5}>
-          <Text>{t.footer.joinUs}</Text>
-          <div style={{ height: 50 }}></div>
-          <Title level={5}>{t.footer.businessCooperationEmail}</Title>
-          <Text>{t.footer.businessCooperationEmailValue}</Text>
+          <Title level={5}>{t.footer.bdEmail}</Title>
+          <Text>{t.footer.bdEmailValue}</Text>
           <Title level={5}>{t.footer.companyAddress}</Title>
-          <Text>{t.footer.companyAddress}</Text>
+          <Text>{t.footer.companyAddressValue}</Text>
         </Col>
         <Col xs={24} sm={4}>
-          <Text>{t.footer.joinUs}</Text>
-          <div style={{ height: 50 }}></div>
           <Title level={5}>{t.footer.resumeSubmissionEmail}</Title>
           <Text>{t.footer.resumeSubmissionEmailValue}</Text>
           <div>

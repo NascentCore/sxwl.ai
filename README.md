@@ -1,8 +1,9 @@
 # nascentcore.ai
 
-算想未来 company page 是一个基于 React 前端框架搭建的 Web 应用，采用了 Next.js 作为服务器端渲染框架进行开发。
+基于 React 前端框架，采用了 Next.js 作为服务器端渲染框架进行开发。
 通过 TypeScript 对代码进行类型约束。配合 Material-UI 组件库和 Emotion CSS-in-JS 库实现界面开发。
-并且遵循了 ESLint、Prettier 和 Commitlint 等规范化工具的代码风格。
+Eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代码前运行 `npm run lint` 和 `npm run format`。
+使用了 husky 和 lint-staged 工具，在提交代码时会自动格式化代码，并且只检查本次提交的文件。
 
 ## 技术栈
 
@@ -17,41 +18,20 @@
 
 ## 安装和使用
 
-1. 克隆仓库到本地
-
 ```bash
 git clone https://github.com/nascentcore/nascentcore.ai.git
-```
-
-2. 在项目根目录下安装依赖
-
-```bash
 cd nascentcore.ai/
 npm install
-```
-
-3. 启动开发服务器
-
-```bash
-npm run dev
-```
-
-4. 打包
-
-```bash
-npm run build
-```
-
-5. 以生产模式启动
-
-```bash
-npm start
+npm run dev # 启动开发服务器
+npm run build # 打包
+npm start # 以生产模式启动
+npm run lint # 运行 eslint 检查代码规范
+npm run format # 格式化代码
 ```
 
 ## 博客使用方式
 
 在项目根目录 `_post` 文件夹里，编写 `.md` 格式的 文档，符合如下格式：
-
 ```
 ---
 title: 这里是标题
@@ -63,28 +43,17 @@ poster: 缩略图片url
 这里是内容...
 
 ```
-
 需要注意的是，新建 md 文档的时候，时间`date`不能重复。
-
-## 命令列表
-
-- `npm run dev`: 启动开发服务器
-- `npm run build`: 打包
-- `npm start`: 以生产模式启动
-- `npm run lint`: 运行 eslint 检查代码规范
-- `npm run format`: 格式化代码
-
-## 其它说明
-
-- 本项目使用 eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代码前运行 `npm run lint` 和 `npm run format`。
-- 本项目使用了 husky 和 lint-staged 工具，在提交代码时会自动格式化代码，并且只检查本次提交的文件。
 
 ## 部署
 
 ```
-# Login AWS machine
+# Login AWS machine, pending removal
 ssh -i dev-env/aws/ec2/key_pairs/us-east-1/tricorder.dev.pem ubuntu@tricorder.dev
-cd nascentcore.ai
-git pull
+
+# Login GCP machine, and switch to root user
+sudo su
+git clone https://github.com/nascentcore/nascentcore.ai.git
+cd nascentcore.ai/
 devops/redeploy.sh
 ```

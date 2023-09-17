@@ -17,16 +17,11 @@ interface IHomepageCover {
   buttonText: string;
 }
 
-interface IPublicCloud {
-  title: string;
-  cardOne: ICardDetails;
-  cardTwo: ICardDetails;
-}
-
 interface IFooter {
   companyName: string;
   operation: string;
   copyright: string;
+  contactUs: string;
   joinUs: string;
   businessCooperationEmail: string;
   businessCooperationEmailValue: string;
@@ -44,6 +39,5 @@ export interface IWebsiteConfig {
   navigationBar: INavigationBar;
   homepageCover: IHomepageCover;
   separatorText: string;
-  publicCloud: IPublicCloud;
   footer: IFooter;
 }
