@@ -48,12 +48,15 @@ poster: 缩略图片url
 ## 部署
 
 ```
-# Login AWS machine, pending removal
-ssh -i dev-env/aws/ec2/key_pairs/us-east-1/tricorder.dev.pem ubuntu@tricorder.dev
-
 # Login GCP machine, and switch to root user
 sudo su
+
+# If the code has not been cloned:
 git clone https://github.com/nascentcore/nascentcore.ai.git
-cd nascentcore.ai/
+
+# If the repo was already cloned:
+git pull --rebase
+
+cd nascentcore.ai
 devops/redeploy.sh
 ```
