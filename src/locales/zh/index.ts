@@ -9,9 +9,9 @@ export default {
     company: "公司",
   },
   homepageCover: {
-    title: "无限访问GPU",
-    subTitle: "用于深度学习",
-    description: "立即启动NVIDIA H100 GPU，每小时仅需$1.99。",
+    title: "价格仅为公有云 40%",
+    subTitle: "大模型、生成式 AI 训练",
+    description: "NVIDIA A100 GPU，仅需 ¥ 9/小时",
     buttonText: "启动实例",
   },
   footer: {
@@ -23,6 +23,6 @@ export default {
     resumeSubmissionEmail: "加入我们",
     resumeSubmissionEmailValue: "hr@nascentcore.ai",
     companyAddress: "公司地址",
-    companyAddressValue: "泰利驿站宝盛广场站，北京市海淀区黑泉路12号康健宝盛广场C座1层",
+    companyAddressValue: "神秘地址",
   },
 };
