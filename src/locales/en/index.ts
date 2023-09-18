@@ -9,9 +9,9 @@ export default {
     company: "Company",
   },
   homepageCover: {
-    title: "Limitless access to GPUs",
-    subTitle: "for deep learning",
-    description: "Launch an NVIDIA H100 GPU right now for just $1.99/hr.",
+    title: "60% cheaper than public Cloud",
+    subTitle: "for LLM & GenAI training",
+    description: "Launch an NVIDIA A100 GPU right now for just $1.19/hr.",
     buttonText: "Launch instance",
   },
   footer: {
@@ -23,7 +23,6 @@ export default {
     resumeSubmissionEmail: "Join us",
     resumeSubmissionEmailValue: "hr@nascentcore.ai",
     companyAddress: "Address",
-    companyAddressValue:
-      "Taili Yizhan, 12 Heiquan Road, Haidian District, Beijing, China",
+    companyAddressValue: "Mythical spot",
   },
 };
