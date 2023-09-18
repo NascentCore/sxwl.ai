@@ -54,9 +54,10 @@ sudo su
 # If the code has not been cloned:
 git clone https://github.com/nascentcore/nascentcore.ai.git
 
+cd nascentcore.ai
+
 # If the repo was already cloned:
 git pull --rebase
 
-cd nascentcore.ai
 devops/redeploy.sh
 ```
