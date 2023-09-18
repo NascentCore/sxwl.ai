@@ -17,7 +17,7 @@ const Index = () => {
           <div
             className={styles.homeRowBtn}
             onClick={() => {
-              window.location.href = "http://cloud.nascentcore.ai";
+              window.location.href = "https://cloud.nascentcore.ai";
             }}
           >
             {t.homepageCover.buttonText}
