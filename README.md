@@ -21,12 +21,12 @@ Eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代
 ```bash
 git clone https://github.com/nascentcore/nascentcore.ai.git
 cd nascentcore.ai/
-npm install
-npm run dev # 启动开发服务器
-npm run build # 打包
-npm start # 以生产模式启动
-npm run lint # 运行 eslint 检查代码规范
-npm run format # 格式化代码
+yarn install
+yarn dev # 启动开发服务器
+yarn build # 打包
+yarn start # 以生产模式启动
+yarn lint # 运行 eslint 检查代码规范
+yarn format # 格式化代码
 ```
 
 ## 博客使用方式
