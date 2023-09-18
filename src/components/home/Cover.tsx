@@ -14,7 +14,14 @@ const Index = () => {
         <h2>{t.homepageCover.subTitle}</h2>
         <p>{t.homepageCover.description}</p>
         <div className={styles.homeRowBtnWrap}>
-          <div className={styles.homeRowBtn}>{t.homepageCover.buttonText}</div>
+          <div
+            className={styles.homeRowBtn}
+            onClick={() => {
+              window.location.href = "http://cloud.nascentcore.ai";
+            }}
+          >
+            {t.homepageCover.buttonText}
+          </div>
         </div>
       </div>
     </>
