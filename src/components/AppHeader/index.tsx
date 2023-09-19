@@ -36,7 +36,7 @@ const App: React.FC = () => {
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
     if (Number(e.key) === 1) {
-      window.location.href = "https://cloud.nascentcore.ai";
+      window.location.href = "http://cloud.nascentcore.ai";
     }
   };
 
