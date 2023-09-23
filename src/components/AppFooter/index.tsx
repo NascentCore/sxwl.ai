@@ -37,13 +37,21 @@ export default function AppFooter() {
         </Col>
         <Col xs={24} sm={5}>
           <Title level={5}>{t.footer.bdEmail}</Title>
-          <Text>{t.footer.bdEmailValue}</Text>
+          <Text>
+            <Link href={`mailto:${t.footer.bdEmailValue}`}>
+              {t.footer.bdEmailValue}
+            </Link>
+          </Text>
           <Title level={5}>{t.footer.companyAddress}</Title>
           <Text>{t.footer.companyAddressValue}</Text>
         </Col>
         <Col xs={24} sm={4}>
           <Title level={5}>{t.footer.resumeSubmissionEmail}</Title>
-          <Text>{t.footer.resumeSubmissionEmailValue}</Text>
+          <Text>
+            <Link href={`mailto:${t.footer.resumeSubmissionEmailValue}`}>
+              {t.footer.resumeSubmissionEmailValue}
+            </Link>
+          </Text>
           <div>
             <Space size={"large"} style={{ marginTop: 20 }}>
               <Link href={bossUrl} target="__blank">
