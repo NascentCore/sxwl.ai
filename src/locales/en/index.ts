@@ -7,7 +7,7 @@ export default {
     cloud: "Cloud",
     datacenter: "Datacenter",
     company: "Company",
-    blog: "Bolg",
+    blog: "Blog",
   },
   homepageCover: {
     title: "60% cheaper than public Cloud",
