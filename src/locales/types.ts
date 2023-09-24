@@ -2,6 +2,7 @@ interface INavigationBar {
   cloud: string;
   datacenter: string;
   company: string;
+  blog: string;
 }
 
 interface ICardDetails {

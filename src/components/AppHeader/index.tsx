@@ -4,10 +4,12 @@ import { Menu, Space, Image, Typography, Row, Col } from "antd";
 import LanguageChange from "./LanguageChange";
 import { useAppContext } from "@/hooks/useAppContext";
 import styles from "./index.module.scss";
+import { useRouter } from "next/router";
 const { Title } = Typography;
 
 const App: React.FC = () => {
   const [show, setShow] = useState<boolean>(false);
+  const router = useRouter();
   useEffect(() => {
     setShow(true);
   }, []);
@@ -16,6 +18,10 @@ const App: React.FC = () => {
     {
       label: t.navigationBar.cloud,
       key: 1,
+    },
+    {
+      label: t.navigationBar.blog,
+      key: 2,
     },
     // {
     //   label: t.navigationBar.datacenter,
@@ -37,6 +43,8 @@ const App: React.FC = () => {
     setCurrent(e.key);
     if (Number(e.key) === 1) {
       window.location.href = "https://cloud.nascentcore.ai";
+    } else if (Number(e.key) === 2) {
+      router.push("/blog");
     }
   };
 
