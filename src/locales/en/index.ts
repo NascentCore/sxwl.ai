@@ -1,7 +1,7 @@
 export default {
   locale: "en",
   localeText: "English",
-  webTitle: "算想未来",
+  webTitle: "NascentCore.AI",
   headerBanner: "",
   navigationBar: {
     cloud: "Cloud",

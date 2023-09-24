@@ -49,7 +49,7 @@ poster: 缩略图片url
 
 ```
 # Login GCP machine, and switch to root user
-sudo su
+sudo su -
 
 # If the code has not been cloned:
 git clone https://github.com/nascentcore/nascentcore.ai.git
