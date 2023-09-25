@@ -7,6 +7,7 @@ export default {
     cloud: "云计算",
     datacenter: "数据中心",
     company: "公司",
+    blog: "Blog",
   },
   homepageCover: {
     title: "价格仅为公有云 40%",
