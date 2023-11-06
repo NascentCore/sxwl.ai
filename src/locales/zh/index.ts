@@ -4,7 +4,7 @@ export default {
   webTitle: "算想未来",
   headerBanner: "",
   navigationBar: {
-    cloud: "云计算",
+    cloud: "算想云",
     datacenter: "数据中心",
     company: "公司",
     blog: "Blog",
