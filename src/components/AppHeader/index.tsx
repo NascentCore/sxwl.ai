@@ -42,7 +42,7 @@ const App: React.FC = () => {
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
     if (Number(e.key) === 1) {
-      window.location.href = "https://cloud.nascentcore.ai";
+      window.location.href = "https://cloud.sxwl.ai";
     } else if (Number(e.key) === 2) {
       router.push("/blog");
     }
