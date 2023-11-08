@@ -21,4 +21,4 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh -o StrictHostKeyChecking=no deploy@sxwl.ai "cd sxwl.ai && git pull origin main && ../redeploy.sh sxwl.ai 3001"
+          ssh -o StrictHostKeyChecking=no deploy@sxwl.ai 'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" && cd sxwl.ai && git pull origin main && deploy/redeploy.sh'
