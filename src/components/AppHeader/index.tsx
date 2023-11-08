@@ -23,6 +23,10 @@ const App: React.FC = () => {
       label: t.navigationBar.blog,
       key: 2,
     },
+    {
+      label: t.navigationBar.docs,
+      key: 3,
+    },
     // {
     //   label: t.navigationBar.datacenter,
     //   key: 2,
@@ -45,6 +49,8 @@ const App: React.FC = () => {
       window.location.href = "https://cloud.sxwl.ai";
     } else if (Number(e.key) === 2) {
       window.location.href = "https://blog.sxwl.ai";
+    } else if (Number(e.key) === 3) {
+      window.location.href = "https://docs.sxwl.ai";
     }
   };
 
