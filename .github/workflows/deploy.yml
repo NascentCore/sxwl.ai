@@ -21,4 +21,4 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh -o StrictHostKeyChecking=no deploy@sxwl.ai "cd sxwl.ai && git pull origin main && ../rede    ploy.sh sxwl.ai 3001"
+          ssh -o StrictHostKeyChecking=no deploy@sxwl.ai "cd sxwl.ai && git pull origin main && ../redeploy.sh sxwl.ai 3001"
