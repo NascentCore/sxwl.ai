@@ -8,6 +8,7 @@ export default {
     datacenter: "数据中心",
     company: "公司",
     blog: "Blog",
+    docs: "Docs",
   },
   homepageCover: {
     title: "价格仅为公有云 40%",
