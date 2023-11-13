@@ -46,7 +46,7 @@ const App: React.FC = () => {
   const onClick: MenuProps["onClick"] = (e) => {
     setCurrent(e.key);
     if (Number(e.key) === 1) {
-      window.location.href = "https://cloud.sxwl.ai";
+      window.location.href = "https://llm.sxwl.ai";
     } else if (Number(e.key) === 2) {
       window.location.href = "https://blog.sxwl.ai";
     } else if (Number(e.key) === 3) {

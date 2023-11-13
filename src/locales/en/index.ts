@@ -4,7 +4,7 @@ export default {
   webTitle: "NascentCore.AI",
   headerBanner: "",
   navigationBar: {
-    cloud: "llm.sxwl.ai",
+    cloud: "Cloud",
     datacenter: "Datacenter",
     company: "Company",
     blog: "Blog",
