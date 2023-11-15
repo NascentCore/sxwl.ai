@@ -17,7 +17,7 @@ const Index = () => {
           <div
             className={styles.homeRowBtn}
             onClick={() => {
-              window.location.href = "https://cloud.sxwl.ai";
+              window.location.href = "https://llm.sxwl.ai";
             }}
           >
             {t.homepageCover.buttonText}
