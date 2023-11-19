@@ -9,11 +9,8 @@ const { Title, Text } = Typography;
  */
 export default function AppFooter() {
   const { t } = useAppContext();
-  // boss招聘主页
   const bossUrl =
     "https://www.zhipin.com/gongsi/cec67883c0aa01401XN-29S_EFU~.html";
-  // 飞书投递简历
-  const feishuUrl = "https://wenjuan.feishu.cn/m/cfm?t=sT0CPNNzNhLi-qegt";
 
   return (
     <>
@@ -59,16 +56,6 @@ export default function AppFooter() {
                   preview={false}
                   src={"/assets/boss_zhipin.png"}
                   alt={"进入招聘主页"}
-                  width={42}
-                  height={42}
-                ></Image>
-              </Link>
-
-              <Link href={feishuUrl} target="__blank">
-                <Image
-                  preview={false}
-                  src={"/assets/feishu.png"}
-                  alt={"快速投递简历"}
                   width={42}
                   height={42}
                 ></Image>
