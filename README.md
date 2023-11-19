@@ -1,4 +1,4 @@
-# nascentcore.ai
+# sxwl.ai
 
 基于 React 前端框架，采用了 Next.js 作为服务器端渲染框架进行开发。
 通过 TypeScript 对代码进行类型约束。配合 Material-UI 组件库和 Emotion CSS-in-JS 库实现界面开发。
@@ -19,8 +19,6 @@ Eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代
 ## 安装和使用
 
 ```bash
-git clone https://github.com/nascentcore/nascentcore.ai.git
-cd nascentcore.ai/
 yarn install
 yarn dev # 启动开发服务器
 yarn build # 打包
