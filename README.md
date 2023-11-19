@@ -19,7 +19,7 @@ Eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代
 ## 安装和使用
 
 ```bash
-yarn install
+yarn install # 安装依赖包
 yarn dev # 启动开发服务器
 yarn build # 打包
 yarn start # 以生产模式启动
