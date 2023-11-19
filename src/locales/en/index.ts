@@ -9,6 +9,7 @@ export default {
     company: "Company",
     blog: "Blog",
     docs: "Docs",
+    pricing: "Pricing",
   },
   homepageCover: {
     title: "60% cheaper than public Cloud",

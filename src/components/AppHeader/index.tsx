@@ -27,14 +27,10 @@ const App: React.FC = () => {
       label: t.navigationBar.docs,
       key: 3,
     },
-    // {
-    //   label: t.navigationBar.datacenter,
-    //   key: 2,
-    // },
-    // {
-    //   label: t.navigationBar.company,
-    //   key: 3,
-    // },
+    {
+      label: t.navigationBar.pricing,
+      key: 4,
+    },
     {
       label: <LanguageChange />,
       className: styles.languangeColNav,
@@ -51,6 +47,10 @@ const App: React.FC = () => {
       window.location.href = "https://blog.sxwl.ai";
     } else if (Number(e.key) === 3) {
       window.location.href = "https://docs.sxwl.ai";
+    } else if (Number(e.key) === 4) {
+      // TODO: Can we use relative url (or relative path) so that this link
+      // can be redirected to local path during development and testing.
+      window.location.href = "https://sxwl.ai/pricing";
     }
   };
 

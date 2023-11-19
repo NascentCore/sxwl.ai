@@ -7,8 +7,9 @@ export default {
     cloud: "算想云",
     datacenter: "数据中心",
     company: "公司",
-    blog: "Blog",
-    docs: "Docs",
+    blog: "博客",
+    docs: "文档",
+    pricing: "价格",
   },
   homepageCover: {
     title: "价格为公有云 40%",
