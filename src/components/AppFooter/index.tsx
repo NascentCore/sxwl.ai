@@ -26,7 +26,10 @@ export default function AppFooter() {
             </Space>
           </div>
           <div>
-            <Text>{t.footer.operation}</Text>
+            <Text>{t.footer.operation}：</Text>
+            <Link href={`https://github.com/NascentCore/sxwl.ai`}>
+            编辑页面
+            </Link>
           </div>
           <div>
             <Text>{t.footer.copyright}</Text>
