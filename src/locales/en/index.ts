@@ -35,6 +35,7 @@ export default {
       unit: "/month",
       description: "Perfect for individuals and small teams to get started.",
       btnText: "GET STARTED",
+      link: "",
       tip: "No credit card required",
       featureList: [
         "$10 / month free credits",
@@ -49,6 +50,7 @@ export default {
       description:
         "Designed to meet the needs of collaborative teams and growing businesses.",
       btnText: "CONTACT US",
+      link: "",
       tip: "",
       featureList: [
         "$30 / month free credits included",
@@ -65,6 +67,7 @@ export default {
       description:
         "Built for organizations needing a high level of SLAs, performance, and compliance.",
       btnText: "CONTACT US",
+      link: "",
       tip: "Standard features plus",
       featureList: [
         "Custom integration and support",

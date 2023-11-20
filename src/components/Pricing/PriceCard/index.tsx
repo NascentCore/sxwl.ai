@@ -10,6 +10,11 @@ interface IProps {
 }
 
 const Index = ({ priceItem }: IProps) => {
+  const btnClick = () => {
+    if (priceItem.link) {
+      window.location.href = priceItem.link;
+    }
+  };
   return (
     <>
       <div className={styles.cardWrap}>
@@ -20,10 +25,12 @@ const Index = ({ priceItem }: IProps) => {
             <div className={styles.unit}>{priceItem.unit}</div>
           </div>
           <div className={styles.desc}>{priceItem.description}</div>
-          <div className={styles.btn}>{priceItem.btnText}</div>
-          {Boolean(priceItem.tip) && (
-            <div className={styles.tip}>{priceItem.tip}</div>
+          {priceItem.btnText && (
+            <div className={styles.btn} onClick={btnClick}>
+              {priceItem.btnText}
+            </div>
           )}
+          {priceItem.tip && <div className={styles.tip}>{priceItem.tip}</div>}
           {priceItem.featureList.map((text) => (
             <>
               <div className={styles.featureItem}>{text}</div>

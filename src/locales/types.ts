@@ -50,6 +50,7 @@ export interface IPriceItem {
   unit: string;
   description: string;
   btnText: string;
+  link: string;
   tip: string;
   featureList: string[];
 }
