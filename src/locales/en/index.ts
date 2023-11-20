@@ -28,4 +28,48 @@ export default {
     companyAddress: "Address",
     companyAddressValue: "Mythical spot",
   },
+  price: [
+    {
+      title: "Basic",
+      price: "$0",
+      unit: "/month",
+      description: "Perfect for individuals and small teams to get started.",
+      btnText: "GET STARTED",
+      featureList: [
+        "$10 / month free credits",
+        "No subscription fee",
+        "Concurrent jobs up to 16 CPUs + 1 GPU",
+      ],
+    },
+    {
+      title: "Standard",
+      price: "$100",
+      unit: "/month",
+      description:
+        "Designed to meet the needs of collaborative teams and growing businesses.",
+      btnText: "",
+      featureList: [
+        "$30 / month free credits included",
+        "Multi-user support for collaboration",
+        "Elevated quota for scaling",
+        "Custom runtime environments",
+        "Dedicated account manager",
+      ],
+    },
+    {
+      title: "Enterprise",
+      price: "Custom",
+      unit: "",
+      description:
+        "Built for organizations needing a high level of SLAs, performance, and compliance.",
+      btnText: "",
+      featureList: [
+        "Custom integration and support",
+        "Self-hosted deployments",
+        "Dedicated API support for control plane",
+        "Audit log and RBAC (coming soon)",
+        "Prioritize your requests on our roadmap",
+      ],
+    },
+  ],
 };
