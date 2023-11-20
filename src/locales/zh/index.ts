@@ -14,7 +14,7 @@ export default {
   homepageCover: {
     title: "价格为公有云 40%",
     subTitle: "分布式大模型训练",
-    description: "NVIDIA A100 GPU，仅需 ¥ 16/小时",
+    description: "NVIDIA A100 GPU，仅需 ¥ 13.4/小时",
     buttonText: "提交训练任务",
   },
   footer: {
