@@ -41,4 +41,16 @@ export interface IWebsiteConfig {
   homepageCover: IHomepageCover;
   separatorText: string;
   footer: IFooter;
+  price: IPriceItem[];
+}
+
+export interface IPriceItem {
+  title: string;
+  price: string;
+  unit: string;
+  description: string;
+  btnText: string;
+  link: string;
+  tip: string;
+  featureList: string[];
 }
