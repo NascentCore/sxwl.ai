@@ -1,8 +1,5 @@
 import AppContainer from "@/components/AppContainer";
-import NewsCard from "@/components/Blog/NewsCard";
 import PriceCard from "@/components/Pricing/PriceCard";
-import axios from "axios";
-import { useEffect, useState } from "react";
 import styles from "./index.module.scss";
 import { useAppContext } from "@/hooks/useAppContext";
 import { IPriceItem } from "@/locales/types";

@@ -48,7 +48,7 @@ const App: React.FC = () => {
     } else if (Number(e.key) === 3) {
       window.location.href = "https://docs.sxwl.ai";
     } else if (Number(e.key) === 4) {
-      window.location.href = "pricing";
+      window.location.href = "/pricing";
     }
   };
 
