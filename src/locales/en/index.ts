@@ -30,13 +30,13 @@ export default {
   },
   price: [
     {
-      title: "Basic",
+      title: "Free",
       price: "$0",
-      unit: "/month",
+      unit: "/hour",
       description: "Perfect for individuals and small teams to get started.",
       btnText: "GET STARTED",
-      link: "",
-      tip: "No credit card required",
+      link: "https://llm.sxwl.ai/",
+      tip: "Totally free",
       featureList: [
         "$10 / month free credits",
         "No subscription fee",
@@ -46,12 +46,12 @@ export default {
     {
       title: "Standard",
       price: "$100",
-      unit: "/month",
+      unit: "/hour",
       description:
         "Designed to meet the needs of collaborative teams and growing businesses.",
       btnText: "CONTACT US",
-      link: "",
-      tip: "",
+      link: "https://tricorder.feishu.cn/share/base/form/shrcn3vjrbTBLi2GhXSYAixMXRf",
+      tip: "60% cheaper than public Clouds",
       featureList: [
         "$30 / month free credits included",
         "Multi-user support for collaboration",
@@ -67,8 +67,8 @@ export default {
       description:
         "Built for organizations needing a high level of SLAs, performance, and compliance.",
       btnText: "CONTACT US",
-      link: "",
-      tip: "Standard features plus",
+      link: "https://tricorder.feishu.cn/share/base/form/shrcnE4KlgUhbrnNMfTvDWKIlfh",
+      tip: "Designed for top LLM teams",
       featureList: [
         "Custom integration and support",
         "Self-hosted deployments",
