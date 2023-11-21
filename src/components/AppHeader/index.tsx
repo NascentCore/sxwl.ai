@@ -48,9 +48,7 @@ const App: React.FC = () => {
     } else if (Number(e.key) === 3) {
       window.location.href = "https://docs.sxwl.ai";
     } else if (Number(e.key) === 4) {
-      // TODO: Can we use relative url (or relative path) so that this link
-      // can be redirected to local path during development and testing.
-      window.location.href = "https://sxwl.ai/pricing";
+      window.location.href = "pricing";
     }
   };
 
