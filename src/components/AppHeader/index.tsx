@@ -65,6 +65,12 @@ const App: React.FC = () => {
           textAlign: "center",
           fontFamily: "Camphor,sans-serif",
           minHeight: 40,
+          cursor: "pointer",
+        }}
+        onClick={() => {
+          if (t.headerBannerLink) {
+            window.open(t.headerBannerLink);
+          }
         }}
       >
         {t.headerBanner}

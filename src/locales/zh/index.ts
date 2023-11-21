@@ -3,6 +3,7 @@ export default {
   localeText: "简体中文",
   webTitle: "算想未来",
   headerBanner: "",
+  headerBannerLink: "",
   navigationBar: {
     cloud: "算想云",
     datacenter: "数据中心",
