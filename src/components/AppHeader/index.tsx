@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import type { MenuProps } from "antd";
-import { Menu, Space, Image, Typography, Row, Col } from "antd";
+import { Menu, Image, Typography, Row, Col } from "antd";
 import LanguageChange from "./LanguageChange";
 import { useAppContext } from "@/hooks/useAppContext";
 import styles from "./index.module.scss";
 import { useRouter } from "next/router";
+import ContactInfo from "./ContactInfo";
 const { Title } = Typography;
 
 const App: React.FC = () => {
@@ -34,7 +35,7 @@ const App: React.FC = () => {
     {
       label: <LanguageChange />,
       className: styles.languangeColNav,
-      key: 4,
+      key: 5,
     },
   ];
   const [current, setCurrent] = useState("mail");
@@ -91,6 +92,9 @@ const App: React.FC = () => {
               mode="horizontal"
               items={items}
             />
+          </Col>
+          <Col className={styles.contactInfo}>
+            <ContactInfo />
           </Col>
           <Col className={styles.languangeCol}>
             <LanguageChange />

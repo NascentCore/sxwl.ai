@@ -24,6 +24,16 @@
       display: none;
     }
   }
+
+  .contactInfo {
+    a {
+      color: #333;
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
   .languangeColNav {
     display: none;
     @media screen and (max-width: 768px) {
