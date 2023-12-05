@@ -12,9 +12,10 @@ interface IProps {
 const Index = ({ priceItem }: IProps) => {
   const btnClick = () => {
     if (priceItem.link) {
-      window.location.href = priceItem.link;
+      window.open(priceItem.link);
     }
   };
+
   return (
     <>
       <div className={styles.cardWrap}>

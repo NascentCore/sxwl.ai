@@ -3,6 +3,7 @@ export default {
   localeText: "English",
   webTitle: "NascentCore.AI",
   headerBanner: "",
+  headerBannerLink: "",
   navigationBar: {
     cloud: "Cloud",
     datacenter: "Datacenter",

@@ -37,6 +37,7 @@ export interface IWebsiteConfig {
   localeText: string;
   webTitle: string;
   headerBanner: string;
+  headerBannerLink: string;
   navigationBar: INavigationBar;
   homepageCover: IHomepageCover;
   separatorText: string;
