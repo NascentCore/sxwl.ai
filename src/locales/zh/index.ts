@@ -2,8 +2,8 @@ export default {
   locale: "zh",
   localeText: "简体中文",
   webTitle: "算想未来",
-  headerBanner: "",
-  headerBannerLink: "",
+  headerBanner: "H100 上线，详情请点击本链接",
+  headerBannerLink: "https://llm.sxwl.ai",
   navigationBar: {
     cloud: "算想云",
     datacenter: "数据中心",
