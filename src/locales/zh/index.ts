@@ -45,8 +45,8 @@ export default {
       ],
     },
     {
-      title: "标准版 A100 (SXM、4x200 Gbps IB)",
-      price: "¥ 12-14",
+      title: "标准版 A100/H100 (SXM+IB)",
+      price: "¥ 12-30",
       unit: "/小时",
       description: "适用于微调、小规模预训练大模型场景",
       btnText: "联系我们",
