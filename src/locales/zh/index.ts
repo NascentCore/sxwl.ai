@@ -45,7 +45,7 @@ export default {
       ],
     },
     {
-      title: "标准版",
+      title: "标准版 A100",
       price: "¥ 12-14",
       unit: "/小时",
       description: "适用于微调、小规模预训练大模型场景",
@@ -57,6 +57,7 @@ export default {
         "按需使用、先用后付、预付月结、快速上手",
         "24 小时客服支持",
         "A100 SXM GPU、4 x 200 Gbps IB 网络",
+        "其他型号 GPU 参考任务提交界面",
       ],
     },
     {
