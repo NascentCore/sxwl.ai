@@ -17,6 +17,7 @@ export default {
     subTitle: "分布式大模型训练",
     description: "NVIDIA A100 GPU，仅需 ¥ 13.4/小时",
     buttonText: "提交训练任务",
+    investorInstitutionTitle: "投资机构",
   },
   footer: {
     companyName: "算想未来",

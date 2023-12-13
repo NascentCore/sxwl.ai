@@ -17,6 +17,7 @@ export default {
     subTitle: "for LLM & GenAI training",
     description: "Launch an NVIDIA A100 GPU right now for just $1.9/hr.",
     buttonText: "Launch instance",
+    investorInstitutionTitle: "Investor Institution",
   },
   footer: {
     companyName: "NascentCore.AI",
