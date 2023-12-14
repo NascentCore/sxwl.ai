@@ -26,11 +26,3 @@ export default function Index() {
     </>
   );
 }
-
-function convertTo2DArray(arr: any, m: number) {
-  const result = [];
-  for (let i = 0; i < arr.length; i += m) {
-    result.push(arr.slice(i, i + m));
-  }
-  return result;
-}

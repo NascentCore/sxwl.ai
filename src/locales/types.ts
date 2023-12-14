@@ -16,6 +16,7 @@ interface IHomepageCover {
   subTitle: string;
   description: string;
   buttonText: string;
+  investorInstitutionTitle: string;
 }
 
 interface IFooter {
