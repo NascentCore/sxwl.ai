@@ -2,8 +2,8 @@ export default {
   locale: "zh",
   localeText: "简体中文",
   webTitle: "算想未来",
-  headerBanner: "H100 上线，详情请点击本链接",
-  headerBannerLink: "https://llm.sxwl.ai",
+  headerBanner: "2024 年度算想未来开源资助计划、为社区贡献者提供现金资助",
+  headerBannerLink: "https://github.com/NascentCore/3k/tree/main?tab=readme-ov-file#2024-%E5%B9%B4",
   navigationBar: {
     cloud: "算想云",
     datacenter: "数据中心",
