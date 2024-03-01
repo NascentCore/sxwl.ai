@@ -1,0 +1,17 @@
+{
+  "title": {
+    "message": "算想未来"
+  },
+  "item.label.Cloud": {
+    "message": "算想云"
+  },
+  "item.label.Blog": {
+    "message": "博客"
+  },
+  "item.label.Docs": {
+    "message": "文档"
+  },
+  "item.label.Pricing": {
+    "message": "价格"
+  }
+}

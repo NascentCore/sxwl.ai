@@ -1,0 +1,59 @@
+{
+  "locale": {
+    "message": "zh"
+  },
+  "navbar.cloud": {
+    "message": "算想云"
+  },
+  "headerBanner": {
+    "message": "2024 年度算想未来开源资助计划、为社区贡献者提供现金资助"
+  },
+  "headerBannerLink": {
+    "message": "https://github.com/NascentCore/3k/tree/main?tab=readme-ov-file#2024-%E5%B9%B4"
+  },
+  "homepageCover.title": {
+    "message": "价格为公有云 40%"
+  },
+  "homepageCover.subTitle": {
+    "message": "分布式大模型训练"
+  },
+  "homepageCover.description": {
+    "message": "NVIDIA A100 GPU，仅需 ¥ 13.4/小时"
+  },
+  "homepageCover.buttonText": {
+    "message": "提交训练任务"
+  },
+  "homepageCover.investorInstitutionTitle": {
+    "message": "投资机构"
+  },
+  "footer.companyName": {
+    "message": "算想未来"
+  },
+  "footer.operation": {
+    "message": "本网站由算想未来（北京）科技有限责任公司运营"
+  },
+  "footer.operation.edit": {
+    "message": "编辑页面"
+  },
+  "footer.copyright": {
+    "message": "©️2023 算想未来版权所有"
+  },
+  "footer.bdEmail": {
+    "message": "商务合作"
+  },
+  "footer.bdEmailValue": {
+    "message": "bd@sxwl.ai"
+  },
+  "footer.resumeSubmissionEmail": {
+    "message": "加入我们"
+  },
+  "footer.resumeSubmissionEmailValue": {
+    "message": "jobs@sxwl.ai"
+  },
+  "footer.companyAddress": {
+    "message": "公司地址"
+  },
+  "footer.companyAddressValue": {
+    "message": "北京、上海、苏州"
+  }
+}

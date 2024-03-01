@@ -1,0 +1,28 @@
+.publicCloudItem {
+  padding: 30px;
+  text-align: center;
+  .publicCloudItemIcon {
+    width: 68px;
+    height: 68px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .publicCloudItemTitle {
+    color: #150727;
+    font-family: Camphor, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .publicCloudItemDesc {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 180%;
+  }
+  .publicCloudItemBtn {
+    color: rgb(21, 45, 131);
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
