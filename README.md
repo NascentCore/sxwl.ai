@@ -18,8 +18,6 @@
 /static: 存放静态文件，如图片、CSS、JavaScript文件。
 docusaurus.config.js: 项目的配置文件。
 sidebar.js: 侧边栏配置文件。
-
-
 ```
 
 ## 主页国际化配置方式
