@@ -20,10 +20,12 @@ docusaurus.config.js: 项目的配置文件。
 sidebar.js: 侧边栏配置文件。
 
 
-// 国际化配置方式
-修改项目文案: i18n/zh/code.json i18n/en/code.json
-修改价格页面: src/pages/pricing/index.tsx
 ```
+
+## 主页国际化配置方式
+
+修改主页文案: i18n/zh/code.json i18n/en/code.json
+修改价格页面: src/pages/pricing/index.tsx
 
 ## 安装和使用
 
@@ -42,11 +44,6 @@ yarn start
 ```
 
 访问 http://localhost:3000 来预览网站。支持热重载，即你对文档或代码所做的更改将实时反映在浏览器中。
-
-## 使用方式
-
-修改项目文案: i18n/zh/code.json i18n/en/code.json
-修改价格页面: src/pages/pricing/index.tsx
 
 ## doc 使用方式
 
