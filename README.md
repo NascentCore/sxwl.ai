@@ -25,6 +25,7 @@ sidebar.js: 侧边栏配置文件。
 ## 主页国际化配置方式
 
 修改主页文案: i18n/zh/code.json i18n/en/code.json
+
 修改价格页面: src/pages/pricing/index.tsx
 
 ## 安装和使用
