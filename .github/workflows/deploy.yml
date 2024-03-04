@@ -10,6 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install Yarn
+        run: npm install -g yarn
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Build Project
+        run: |
+          yarn build
+      
       - name: Configure SSH
         env:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY }}
@@ -19,6 +37,6 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa sxwl.ai >> ~/.ssh/known_hosts
 
-      - name: Deploy to Server
+      - name: Deploy to Hosting Service
         run: |
-          ssh -o StrictHostKeyChecking=no deploy@sxwl.ai 'export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" && cd sxwl.ai && git pull origin main && devops/redeploy.sh'
+          scp -o StrictHostKeyChecking=no -r build/* deploy@sxwl.ai:~/sxwl.ai.new
