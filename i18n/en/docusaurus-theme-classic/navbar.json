@@ -1,0 +1,17 @@
+{
+  "title": {
+    "message": "NascentCore.AI"
+  },
+  "item.label.Cloud": {
+    "message": "Cloud"
+  },
+  "item.label.Blog": {
+    "message": "Blog"
+  },
+  "item.label.Docs": {
+    "message": "Docs"
+  },
+  "item.label.Pricing": {
+    "message": "Pricing"
+  }
+}

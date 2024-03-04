@@ -1,0 +1,59 @@
+{
+  "locale": {
+    "message": "en"
+  },
+  "navbar.cloud": {
+    "message": "Cloud"
+  },
+  "headerBanner": {
+    "message": "In 2024, NascentCore.AI plans to launch the Future Open Source Grant Program, providing cash grants to community contributors."
+  },
+  "headerBannerLink": {
+    "message": "https://github.com/NascentCore/3k/tree/main?tab=readme-ov-file#2024-%E5%B9%B4"
+  },
+  "homepageCover.title": {
+    "message": "60% cheaper than public Cloud"
+  },
+  "homepageCover.subTitle": {
+    "message": "for LLM & GenAI training"
+  },
+  "homepageCover.description": {
+    "message": "Launch an NVIDIA A100 GPU right now for just $1.9/hr."
+  },
+  "homepageCover.buttonText": {
+    "message": "Launch instance"
+  },
+  "homepageCover.investorInstitutionTitle": {
+    "message": "Investor"
+  },
+  "footer.companyName": {
+    "message": "NascentCore.AI"
+  },
+  "footer.operation": {
+    "message": "This website is operated by NascentCore Co., Ltd."
+  },
+  "footer.operation.edit": {
+    "message": "Edit page"
+  },
+  "footer.copyright": {
+    "message": "©️2023 NascentCore.AI All rights reserved"
+  },
+  "footer.bdEmail": {
+    "message": "Business inquiry"
+  },
+  "footer.bdEmailValue": {
+    "message": "bd@sxwl.ai"
+  },
+  "footer.resumeSubmissionEmail": {
+    "message": "Join us"
+  },
+  "footer.resumeSubmissionEmailValue": {
+    "message": "jobs@sxwl.ai"
+  },
+  "footer.companyAddress": {
+    "message": "Address"
+  },
+  "footer.companyAddressValue": {
+    "message": "Mythical spot"
+  }
+}

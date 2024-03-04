@@ -1,45 +1,122 @@
 # sxwl.ai
 
-基于 React 前端框架，采用了 Next.js 作为服务器端渲染框架进行开发。
-通过 TypeScript 对代码进行类型约束。配合 Material-UI 组件库和 Emotion CSS-in-JS 库实现界面开发。
-Eslint 和 prettier 等工具来保证代码风格的一致性，请在提交代码前运行 `npm run lint` 和 `npm run format`。
-使用了 husky 和 lint-staged 工具，在提交代码时会自动格式化代码，并且只检查本次提交的文件。
+算想未来主页
 
 ## 技术栈
 
-- [React](https://reactjs.org/)：一款流行的 JavaScript 库，用于开发用户界面。React 将应用程序拆分成小组件，使其易于构建、测试和维护。在本项目中，React 负责管理页面的状态和 UI 渲染。
-- [Next.js](https://nextjs.org/)：一个 React 应用程序的服务器端渲染框架，提供更好的性能和 SEO。它还支持静态生成和动态导出等功能，使得开发者能够轻松地为网站创建静态页面，并在需要时使用数据进行预渲染。在本项目中，Next.js 实现了服务器端渲染和路由控制。
-- [TypeScript](https://www.typescriptlang.org/)：一种类型安全的 JavaScript 超集语言，可编译为普通 JavaScript 代码。TypeScript 添加了类型注释、类、接口等特性，使得代码更容易理解、调试和维护。在本项目中，TypeScript 提高了代码的可读性和可维护性。
-- [Ant Design](https://ant.design/)：一个企业级 UI 设计语言和 React UI 库，提供丰富、美观、易用的组件。在本项目中，Ant Design 提供了大量 UI 组件和样式。
-- [Axios](https://axios-http.com/)：一个基于 promise 的 HTTP 客户端，可用于浏览器和 Node.js。Axios 提供了易用的 API，支持请求和响应拦截器、数据转换、cookie 管理等功能。在本项目中，Axios 负责发送 HTTP 请求。
-- [Markdown](https://daringfireball.net/projects/markdown/)：一种轻量级标记语言，用于编写格式简单的文档。在本项目中，Markdown 用于编写博客文章的内容。
-- [Moment](https://momentjs.com/)：一个 JavaScript 日期处理库，提供易用的 API，支持日期格式化、解析、比较等操作。在本项目中，Moment 用于处理日期和时间相关的数据。
-- [ua-device](https://github.com/3846masa/ua-device)：一个 JavaScript 库，用于检测设备类型和浏览器信息。在本项目中，ua-device 用于检测用户设备类型。
+- Docusaurus: 一个基于 React 的静态网站生成器，用于构建文档网站和博客。
+- React: 用于构建用户界面的 JavaScript 库。
+- TypeScript: 一种静态类型检查的 JavaScript 超集。
+
+## 项目结构概述
+
+```
+/blog: 存放Blog的markdown文件。
+/docs: 存放文档的markdown文件。
+/i18n: 存放国际化配置文件。
+/src: 存放自定义页面和样式的目录。
+/static: 存放静态文件，如图片、CSS、JavaScript文件。
+docusaurus.config.js: 项目的配置文件。
+sidebar.js: 侧边栏配置文件。
+```
+
+## 主页国际化配置方式
+
+修改主页文案: i18n/zh/code.json i18n/en/code.json
+
+修改价格页面: src/pages/pricing/index.tsx
 
 ## 安装和使用
 
+node 版本 >= 18
+
 ```bash
 yarn install # 安装依赖包
-yarn dev # 启动开发服务器
-yarn build # 打包
-yarn start # 以生产模式启动
-yarn lint # 运行 eslint 检查代码规范
-yarn format # 格式化代码
 ```
 
-## 部署
+## 本地预览
+
+在项目根目录下运行以下命令以启动本地开发服务器：
 
 ```
-# Login GCP machine, and switch to root user
-sudo su -
-
-# If the code has not been cloned:
-git clone https://github.com/nascentcore/nascentcore.ai.git
-
-cd nascentcore.ai
-
-# If the repo was already cloned:
-git pull --rebase
-
-devops/redeploy.sh
+yarn start
 ```
+
+访问 http://localhost:3000 来预览网站。支持热重载，即你对文档或代码所做的更改将实时反映在浏览器中。
+
+## doc 使用方式
+
+创建文档：
+
+1. 选择文档目录： 文档存储在 docs 目录下。可以选择在此目录下创建一个新的子目录来组织文档内容。
+
+2. 创建文档文件： 在选定的文档目录下，可以使用 .md 扩展名，例如 my-document.md。
+
+3. 添加文档内容： 打开 Markdown 文件，并开始编写文档内容。可以使用标准的 Markdown 语法来添加标题、段落、列表、链接、代码块等。
+
+4. 添加 YAML 头信息（可选）： 在 Markdown 文件的开头，可以添加 YAML 头信息，用于定义文档的元数据。例如：
+
+```
+---
+id: doc-with-tags
+title: 一篇包含标签的文档
+tags:
+  - 演示
+  - 开始上手
+---
+
+```
+
+YAML 头信息中的 title 用于指定文档的标题。
+
+## blog 使用方式
+
+1：进入博客目录
+
+首先，进入项目中用于存放博客文章的目录。这个目录名为 blog，可以使用终端进入该目录：
+
+```
+cd blog
+```
+
+2：创建博客文章文件
+
+在博客目录中，需要为每篇博客文章创建一个单独的 Markdown 文件。文件名通常包括日期和标题，以确保博客文章可以按时间顺序排列。可以使用文本编辑器创建一个新文件，或者使用命令行创建。以下是一个示例命令：
+
+```
+touch 2023-11-08-my-blog-post.md
+```
+
+这将创建一个名为 2023-11-08-my-blog-post.md 的新博客文章文件。
+
+3：编辑博客文章内容
+
+打开博客文章文件，使用 Markdown 编写博客文章的内容。在文件的开头，可以使用 YAML 头信息来指定文章的元数据，例如标题、作者和日期。示例：
+
+```
+---
+
+title: My Blog Post
+author: John Doe
+date: 2023-11-08
+
+---
+
+# 博客文章标题
+
+这里是博客文章的内容。可以在这里使用标准的 Markdown 语法编写文章，包括标题、段落、列表、链接、代码块等。
+
+博客文章内容可以是要分享的任何信息，包括技术教程、新闻、个人见解等。
+```
+
+确保在 YAML 头信息的分隔符 (---) 之后添加一个空行，然后开始编写文章的正文内容。
+
+## 部署流程
+
+运行以下命令来构建项目：
+
+```
+yarn build
+```
+
+此命令将生成静态内容到 /build 目录，这些内容准备好被部署到任何静态文件托管服务。

@@ -1,16 +1,11 @@
-import Cover from "@/components/home/Cover";
-import AppContainer from "@/components/AppContainer";
-import InvestorInstitution from "@/components/home/InvestorInstitution";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import HomePage from "./home";
 
-export default function Home() {
+export default function Home(): JSX.Element {
+  const { siteConfig } = useDocusaurusContext();
   return (
     <>
-      <AppContainer className="home_page_wrap">
-        <div>
-          <Cover />
-          <InvestorInstitution />
-        </div>
-      </AppContainer>
+      <HomePage />
     </>
   );
 }
