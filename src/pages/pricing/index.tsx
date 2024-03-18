@@ -106,22 +106,24 @@ export default function Home(): JSX.Element {
     ],
   };
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
-      <div className={styles.priceBoxGroup}>
-        {priceCardMap[
-          translate({
-            id: "locale",
-          })
-        ].map((item: any) => (
-          <>
-            <PriceCard priceItem={item} />
-          </>
-        ))}
-      </div>
-      <AppFooter />
-    </Layout>
+    <>
+      <Layout
+        title={`${siteConfig.title}`}
+        description="Description will go into a meta tag in <head />"
+      >
+        <div className={styles.priceBoxGroup}>
+          {priceCardMap[
+            translate({
+              id: "locale",
+            })
+          ].map((item: any) => (
+            <>
+              <PriceCard priceItem={item} />
+            </>
+          ))}
+        </div>
+        <AppFooter />
+      </Layout>
+    </>
   );
 }
