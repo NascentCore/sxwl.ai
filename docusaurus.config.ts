@@ -53,6 +53,11 @@ const config: Config = {
 
   themeConfig: {
     // image: "img/docusaurus-social-card.jpg",
+    announcementBar: {
+      id: "top_banner",
+      content: `<div id="top-banner"><a target="_blank" href="https://github.com/NascentCore/3k/tree/main?tab=readme-ov-file#2024-%E5%B9%B4"></a></div>`,
+      isCloseable: false,
+    },
     navbar: {
       title: "title",
       logo: {
