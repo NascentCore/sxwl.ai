@@ -65,3 +65,7 @@ html[lang="en"] #top-banner a::after {
   display: block;
   content: "In 2024, NascentCore.AI plans to launch the Future Open Source Grant Program, providing cash grants to community contributors.";
 }
+
+body {
+  background-color: #fff;
+}
