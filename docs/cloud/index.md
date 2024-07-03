@@ -12,3 +12,4 @@ sidebar_position: 0
 - [算力源指南](./cps-user-guide)
 - [容器镜像构建指南](./image-build-guide)
 - [API使用指南](./api-user-guide)
+- [sxwlctl使用指南](./api-user-guide)
