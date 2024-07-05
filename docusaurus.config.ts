@@ -66,12 +66,18 @@ const config: Config = {
       },
       items: [
         { to: "https://llm.sxwl.ai", label: "Cloud", position: "left" },
+        {
+          type: "docSidebar",
+          position: "left",
+          sidebarId: "sx3k",
+          label: "算想三千",
+        },
         { to: "/blog", label: "Blog", position: "left" },
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Docs",
+          sidebarId: "document",
+          label: "文档",
         },
         { to: "/pricing", label: "Pricing", position: "left" },
         { to: "tel:15910236560", label: "15910236560", position: "right" },
