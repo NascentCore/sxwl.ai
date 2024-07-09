@@ -19,8 +19,8 @@ wget -qO- https://sxwl-ai.oss-cn-beijing.aliyuncs.com/artifacts/tools/install.sh
 <img src={require('./images/sxwlctl-register.png').default} style={{width: 800}} />
 
 替换token
-```bash
-token="eyJhb..."
+```yaml
+token: "eyJhb..."
 ```
 
 ## 上传
