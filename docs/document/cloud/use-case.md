@@ -109,7 +109,7 @@ sxwlctl upload -r dataset -d /home/kelvin/work/datasets/my-alpaca-demo
 
 ### 微调
 在模型仓库页面，所选基底模型的右侧点击“微调”按钮，选择我们刚刚上传的数据集
-<img src={require('./images/finetune-select-model.png').default} style={{width: 800}} />
+<img src={require('./images/finetune-select-dataset.png').default} style={{width: 800}} />
 
 其他参数根据自己的实际情况选择，注意选择的GPU数量越多，单位时间费用也会更高。这里我们选择保存完整模型，目前只有完整模型才能进行后续的推理。
 <img src={require('./images/finetune-config.png').default} style={{width: 800}} />
