@@ -10,6 +10,7 @@ sidebar_position: 0
 - [算想云与 Serverless](./serverless)
 - [使用指南](./cp-user-guide)
 - [算力源指南](./cps-user-guide)
+- [使用案例](./use-case)
 - [容器镜像构建指南](./image-build-guide)
 - [API 使用指南](./api-user-guide)
 - [sxwlctl 使用指南](./api-user-guide)
