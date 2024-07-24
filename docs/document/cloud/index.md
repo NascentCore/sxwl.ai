@@ -12,5 +12,6 @@ sidebar_position: 0
 - [算力源指南](./cps-user-guide)
 - [使用案例](./use-case)
 - [容器镜像构建指南](./image-build-guide)
-- [API使用指南](./api-user-guide)
-- [sxwlctl使用指南](./sxwlctl-guide)
+- [API 使用指南](./api-user-guide)
+- [sxwlctl 使用指南](./api-user-guide)
+- [使用 CPodjob 运行 huggingface 示例代码](./huggingface.md)
