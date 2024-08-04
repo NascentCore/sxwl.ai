@@ -15,3 +15,4 @@ sidebar_position: 0
 - [API 使用指南](./api-user-guide)
 - [sxwlctl 使用指南](./api-user-guide)
 - [使用 CPodjob 运行 huggingface 示例代码](./huggingface.md)
+- [开发实验室使用指南](./cloud-pod.md)
