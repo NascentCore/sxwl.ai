@@ -5,6 +5,9 @@
   "item.label.Cloud": {
     "message": "Cloud"
   },
+  "item.label.OnPrem": {
+    "message": "OnPrem"
+  },
   "item.label.Blog": {
     "message": "Blog"
   },
