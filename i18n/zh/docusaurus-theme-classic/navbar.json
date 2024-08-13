@@ -5,6 +5,9 @@
   "item.label.Cloud": {
     "message": "算想云"
   },
+  "item.label.OnPrem": {
+    "message": "算想三千"
+  },
   "item.label.Blog": {
     "message": "博客"
   },
