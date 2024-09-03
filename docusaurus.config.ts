@@ -76,7 +76,7 @@ const config: Config = {
         {
           type: "docSidebar",
           position: "left",
-          sidebarId: "document",
+          sidebarId: "sxwl",
           label: "Docs",
         },
         { to: "/pricing", label: "Pricing", position: "left" },
