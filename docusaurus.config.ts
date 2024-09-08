@@ -66,17 +66,12 @@ const config: Config = {
       },
       items: [
         { to: "https://llm.sxwl.ai", label: "Cloud", position: "left" },
-        {
-          type: "docSidebar",
-          position: "left",
-          sidebarId: "sx3k",
-          label: "OnPrem",
-        },
+        { to: "/docs/sx3k/", label: "OnPrem", position: "left" },
         { to: "/blog", label: "Blog", position: "left" },
         {
           type: "docSidebar",
           position: "left",
-          sidebarId: "sxwl",
+          sidebarId: "document",
           label: "Docs",
         },
         { to: "/pricing", label: "Pricing", position: "left" },
