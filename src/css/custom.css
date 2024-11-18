@@ -59,13 +59,14 @@
 html[lang="zh"] #top-banner a::after {
   display: block;
   /* content: "2024 年度算想未来开源资助计划、为社区贡献者提供现金资助"; */
-  content: "";
+  content: "AMD GPU 全新上线，请在 GPU 型号中选择 AMD GPU";
 }
 
 html[lang="en"] #top-banner a::after {
   display: block;
   /* content: "In 2024, NascentCore.AI plans to launch the Future Open Source Grant Program, providing cash grants to community contributors."; */
   content: "";
+  content: "AMD GPU now available. Please select AMD GPU in the GPU model options";
 }
 
 body {
