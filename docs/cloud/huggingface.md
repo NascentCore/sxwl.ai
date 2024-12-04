@@ -1,4 +1,5 @@
 ---
+sidebar_position: 9
 id: doc-with-tags
 title: 使用 CPodjob运行 huggingface示例代码
 tags:

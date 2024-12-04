@@ -14,5 +14,6 @@ sidebar_position: 1
 - [容器镜像构建指南](./image-build-guide)
 - [API 使用指南](./api-user-guide)
 - [sxwlctl 使用指南](./api-user-guide)
-- [使用 CPodjob 运行 huggingface 示例代码](./huggingface.md)
 - [开发实验室使用指南](./cloud-pod.md)
+- [使用 CPodjob 运行 huggingface 示例代码](./huggingface.md)
+- [端到端微调案例总结](./end-to-end-finetune.md)
