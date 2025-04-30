@@ -39,4 +39,4 @@ jobs:
 
       - name: Deploy to Hosting Service
         run: |
-          scp -o StrictHostKeyChecking=no -r build/* deploy@sxwl.ai:~/sxwl.ai.new
+          scp -o StrictHostKeyChecking=no -r build/* root@sxwl.ai:~/sxwl.ai
